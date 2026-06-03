@@ -112,3 +112,5 @@ function totalBasketTemplate(totalIndex) {
                 <button onclick="">Buy now ()</button>    
             `
 }
+
+test 123 test si si no no
