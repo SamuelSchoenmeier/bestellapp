@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestellapp</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/img-style.css" />
+    <link rel="stylesheet" href="./styles/button.css"/>
+
+    <script src="script.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/json.js"></script>
+  </head>
+  <body onload="init()">
+    <header>
+      <nav>
+        <div class="content nav-img">
+          <a href="./index.html"
+            ><img class="logo-img" src="./img/Logo 02.png" alt="Logo"
+          /></a>
+          <img class="nav-menu" src="./img/dehaze.png" alt="Menü" />
+        </div>
+      </nav>
+      <section class="content">
+        <div class="hero-section">
+          <img
+          class="main-logo-img"
+          src="./img/duckahouse-noodle-3899206_1280.png"
+          alt="logo"
+        />
+          <span>
+          <div class="hero-section-headline">
+            <h1>
+              <p class="h1-color1">Sacura</p>
+              <p class="h1-color2">Ramen</p>
+              <p class="h1-color3">2.0</p>
+            </h1>
+            <span class="rating"
+              ><p class="rating-in-stars">
+                <img
+                  class="rating-star"
+                  src="./icons/star.png"
+                  alt="stars"
+                />4,9
+              </p>
+              <p class="rating-number">(562)</p>
+            </span>
+          </div>
+        </span>
+        <h3 class="underline">The best Noddles, Soups and Suhi!</h3>
+      </section>
+        </div>
+    </header>
+
+
+
+    <main>
+      
+      <div class="main-wrapper content">
+        <div>
+          <section class="section-menu">
+            <div class="menu-titles">
+              <div class="menu-titles-elements">
+                <img class="ramen-illustration" src="./img/ramen-illustation.png" alt="Rameng-img">
+                <h2>Ramen</h2>
+              </div>
+            </div>
+
+            <div id="ramen_menu"></div>
+          </section>
+
+
+          <section class="section-menu">
+            <div class="menu-titles">
+              <img class="noodle-illustration" src="./img/noodle-illustation.png" alt="Noodle-img">
+              <h2>Noodles</h2>
+            </div>
+
+            <div id="noodle_menu"></div>
+          </section>
+
+
+          <section class="section-menu">
+            <div class="menu-titles">
+              <img class="sushi-illustration" src="./img/sushi-illustation.png" alt="Sushi-img">
+              <h2>Sushi</h2>
+            </div>
+
+            <div id="sushi_menu"></div>
+          </section>
+        </div>
+
+        <section class="section-basket">
+          <div class="basket">
+            <h3 class="h3-basket">Your Basket</h3>
+            <div id="total_basket"></div>
+            <div id="empty_basket"></div>
+            <div id="basket_content"></div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+
+<!--
+        /\__/\     
+      =( '.'  )= | 
+       |`[]``\  / 
+       |_n_n_| / 
+-->
+
+
+    <footer>
+        <ul>
+          <li><a class="footer-link" href="#">SakuraRamen2.0</a></li>
+          <li><a class="footer-link" href="./footer/Imprint.html">Imprint</a></li>
+          <li><a class="footer-link" href="./footer/Cookies.html">Cookies</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>

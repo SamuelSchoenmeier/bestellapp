@@ -1,0 +1,162 @@
+body {
+    margin: auto;
+    border: 0;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+} 
+
+:root {
+    --primary-color : rgb(128, 0, 0);
+    --secondary-color: #FDEADC;
+    --thirt-color: #363534;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+.hero-section {
+    background-image: url(/img/hero_bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.rating {
+    display: flex;
+    align-items: end;
+    gap: 8px;
+}
+
+.hero-section-headline {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+main {
+    padding-top: 320px;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-titles {
+    background-color: var(--primary-color);
+    height: 78px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.menu-titles-elements {
+    display: flex;
+    padding-left: 250px;
+}
+
+
+
+/*          /\__/\          */
+/*        =(  '.' )   |     */
+/*          |`[]``\  /      */
+/*          |_n_n_| /       */
+
+
+
+/* <im JS block> */
+
+.menu-content {
+    background-color: var(--secondary-color);
+    display: flex;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    gap: 32px;
+}
+
+
+
+/* </im JS block> */
+
+footer {
+    background-color: var(--primary-color);
+    height: 116px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    padding-bottom: 16px;
+    gap: 46px;
+    height: 100px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 50px;
+    margin: 0;
+}
+
+.h1-color1 {
+    color: var(--primary-color);
+}
+
+.h1-color2 {
+    color: black;
+}
+
+.h1-color3 {
+    color: goldenrod;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    align-content: center;
+}
+
+.rating-in-stars {
+    color: var(--thirt-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.rating-number {
+    margin: 0;
+}
+
+.rating {
+    background-color: var(--secondary-color);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.underline {
+    margin: 0;
+    font-size: 20px;
+    color: var(--thirt-color);
+}
+

@@ -1,0 +1,57 @@
+.nav-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo-img {
+    height: 30px;
+}
+
+.nav-menu {
+    height: 20px;
+}
+
+.main-logo-img {
+    height: 190px;
+    border: 20px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    width: 190px;
+    object-fit: cover;
+}
+
+.rating-star {
+    height: 20px;
+}
+
+.ramen-illustration {
+    height: 100px;
+}
+
+.noodle-illustration {
+    height: 100px;
+}
+
+.sushi-illustration {
+    height: 100px;
+}
+
+
+/*          /\__/\               */
+/*        =(  '.' )=   |         */
+/*          |`[]``\   /          */
+/*          |_n__n_| /           */
+
+
+
+
+/* <im JS block> */
+
+.ramen-menu-img {
+    height: 132px;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+/* </im JS block> */
