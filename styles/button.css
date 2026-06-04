@@ -17,17 +17,12 @@
 }
 
 .delete-order-btn{
-    border: 0;
     background-color: var(--secondary-color);
 }
 
 .delete-order-btn:hover {
     background-image: url(/icons/delete.png);
     background-size: cover;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    margin: 0;
 }
 
 .add-to-order {

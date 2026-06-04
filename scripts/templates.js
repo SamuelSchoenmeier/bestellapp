@@ -72,7 +72,7 @@ function renderBasketTemplate(basketIndex) {
                     <div class="order-dish">
                         <div class="dish-info">
                             <button class="delete-order-btn"><img src="/icons/deletebasket-devault.png" alt="delet-order"></button>
-                            <p>1</p>
+                            <p>${basket[basketIndex].quantity}</p>
                             <button class="add-to-order"><img src="icons/+.png"></button>
                         </div>
                         <p>${(basket[basketIndex].price * basket[basketIndex].quantity).toFixed(2)} €</p>
@@ -81,11 +81,11 @@ function renderBasketTemplate(basketIndex) {
 }
 
 function emptyBasketTemplate() {
-    return `<p>
+    return `<p class="empty-basket-text">
                 Nothing here yet.
                 Go ahead and choose something delicious!
             </p>
-            <img src="/icons/shoppingcart.png" alt="shoppingcart because basket is emptyyy">
+            <img class="empty-basket-shoppingcart" src="/icons/shoppingcart.png" alt="shoppingcart because basket is emptyyy">
             `
 }
 
@@ -105,7 +105,7 @@ function totalBasketTemplate(totalPrice, subTotal, deliveryCost) {
                     <table>
                         <tr>
                             <th>Total</th>
-                            <th></th>
+                            <th>${totalPrice.toFixed(2)}€</th>
                         </tr>
                     </table>
                 </div>
