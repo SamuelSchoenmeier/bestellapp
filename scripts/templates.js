@@ -89,16 +89,16 @@ function emptyBasketTemplate() {
             `
 }
 
-function totalBasketTemplate(totalIndex) {
+function totalBasketTemplate(totalPrice, subTotal, deliveryCost) {
     return `    <div>
                     <table>
                         <tr>
                             <th>Subtotal</th>
-                            <th>${totalPrice.toFixed(2)}€</th>
+                            <th>${subTotal.toFixed(2)}€</th>
                         </tr>
                         <tr>
                             <th>Delivery free</th>
-                            <th></th>
+                            <th>${deliveryCost === 0 ? "free" : deliveryCost.toFixed(2) + "€"}</th>
                         </tr>
                     </table>
                     <div class="seperator"></div>
@@ -109,6 +109,6 @@ function totalBasketTemplate(totalIndex) {
                         </tr>
                     </table>
                 </div>
-                <button onclick="">Buy now ()</button>    
+                <button onclick="orderFood()">Buy now (${totalPrice.toFixed(2)}€)</button>    
             `
 }

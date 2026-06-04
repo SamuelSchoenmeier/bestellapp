@@ -104,6 +104,9 @@ function renderBasket() {
 
     if (basket.length === 0){
         renderEmptyBasket();
+
+        document.getElementById("total_basket");
+
         return;
     }
 
@@ -117,14 +120,24 @@ function renderBasket() {
 }
 
 function renderTotalPrice() {
-    let totalRef = document.getElementById("total_basket")
+    let totalRef = document.getElementById("total_basket");
+
+    let subTotal = 0;
+
 
     totalRef.innerHTML = "";
 
+
     for (let totalIndex = 0; totalIndex < basket.length; totalIndex++) {
-        totalPrice += basket[totalIndex].price * basket[totalIndex].quantity
+        subTotal += basket[totalIndex].price * basket[totalIndex].quantity
     }
-    totalRef.innerHTML += totalBasketTemplate(totalIndex);
+
+    let deliveryCost = subTotal >= 15 ? 0 : 2;
+
+    let totalPrice = subTotal + deliveryCost;
+
+
+    totalRef.innerHTML += totalBasketTemplate(totalPrice, subTotal, deliveryCost);
 }
 
 
