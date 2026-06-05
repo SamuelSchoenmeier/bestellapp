@@ -68,6 +68,7 @@ main {
 .menu-titles-elements {
     display: flex;
     padding-left: 250px;
+    gap: 10px;
 }
 
 
@@ -80,6 +81,11 @@ main {
 
 
 /* <im JS block> */
+
+.menu {
+    padding-top: 120px;
+    margin-bottom: 120px;
+}
 
 .menu-content {
     background-color: var(--secondary-color);
