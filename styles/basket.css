@@ -8,7 +8,6 @@
     color: var(--secondary-color);
     text-align: center;
     font-size: 30px;
-    padding-top: 30px;
 }
 
 .section-basket {
@@ -39,6 +38,7 @@
 /*          |_n__n_| /      */
 
 
+
 .empty-basket-text {
     color: var(--secondary-color);
     font-size: 20px;
@@ -46,6 +46,10 @@
 
 .order-in-basket {
     height: 340px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color)  var(--secondary-color);
+    padding: 8px;
 }
 
 .menu-in-basket {
@@ -80,4 +84,5 @@ tr {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-top: 50px;
 }
