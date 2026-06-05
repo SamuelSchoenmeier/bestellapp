@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Yusei Magic';
+    src: url("./font/YuseiMagic-Regular.ttf") format('woff2');
+}
+
+
 body {
     margin: auto;
     border: 0;
+    font-family: 'Yusei Magic', system-ui, Arial, sans-serif;;
 }
 
 .content {

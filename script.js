@@ -119,6 +119,7 @@ function renderBasket() {
     renderTotalPrice();
 }
 
+
 function renderTotalPrice() {
     let totalRef = document.getElementById("total_basket");
 

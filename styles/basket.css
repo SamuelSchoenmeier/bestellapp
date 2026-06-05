@@ -45,7 +45,7 @@
 }
 
 .order-in-basket {
-    height: 400px;
+    height: 340px;
 }
 
 .menu-in-basket {
@@ -68,4 +68,16 @@ table {
 
 th {
     color: white;
+    font-size: 20px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-basket-styling {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

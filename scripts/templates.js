@@ -97,7 +97,7 @@ function totalBasketTemplate(totalPrice, subTotal, deliveryCost) {
                             <th>${subTotal.toFixed(2)}€</th>
                         </tr>
                         <tr>
-                            <th>Delivery free</th>
+                            <th>Delivery</th>
                             <th>${deliveryCost === 0 ? "free" : deliveryCost.toFixed(2) + "€"}</th>
                         </tr>
                     </table>
@@ -109,6 +109,6 @@ function totalBasketTemplate(totalPrice, subTotal, deliveryCost) {
                         </tr>
                     </table>
                 </div>
-                <button onclick="orderFood()">Buy now (${totalPrice.toFixed(2)}€)</button>    
+                <button class="buy-now-btn" onclick="orderFood()">Buy now (${totalPrice.toFixed(2)}€)</button>    
             `
 }

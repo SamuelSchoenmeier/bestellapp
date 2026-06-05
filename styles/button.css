@@ -29,3 +29,11 @@
     border: 0;
     background-color: var(--secondary-color);
 }
+
+.buy-now-btn {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 16px;
+    border: 0;
+    border-radius: 32px;
+}
