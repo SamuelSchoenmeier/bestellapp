@@ -71,9 +71,9 @@ function renderBasketTemplate(basketIndex) {
                     <h4>${basket[basketIndex].quantity} x ${basket[basketIndex].name}</h4>
                     <div class="order-dish">
                         <div class="dish-info">
-                            <button class="delete-order-btn"><img src="/icons/deletebasket-devault.png" alt="delet-order"></button>
+                            <button class="delete-order-btn" onclick="decreaseQuantity(${basketIndex})"><img src="/icons/deletebasket-devault.png" alt="delet-order"></button>
                             <p>${basket[basketIndex].quantity}</p>
-                            <button onclick="addToBasket(${basketIndex})" class="add-to-order"><img src="icons/+.png"></button>
+                            <button onclick="increaseQuantity(${basketIndex})" class="add-to-order"><img src="/icons/+.png"></button>
                         </div>
                         <p>${(basket[basketIndex].price * basket[basketIndex].quantity).toFixed(2)} €</p>
                     </div>

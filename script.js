@@ -176,3 +176,18 @@ function addToBasket (item) {
     }
     renderBasket()
 }
+
+function increaseQuantity(basketIndex) {
+    basket[basketIndex].quantity++;
+    renderBasket();
+}
+
+function decreaseQuantity (basketIndex) {
+    basket[basketIndex].quantity--;
+
+    if (basket[basketIndex].quantity <= 0) {
+        basket.splice(basketIndex, 1);
+    }
+
+    renderBasket();
+}
