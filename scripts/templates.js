@@ -117,6 +117,6 @@ function totalBasketTemplate(totalPrice, subTotal, deliveryCost) {
                         </tr>
                     </table>
                 </div>
-                <button class="buy-now-btn" onclick="orderFood()">Buy now (${totalPrice.toFixed(2)}€)</button>    
+                <button class="buy-now-btn" onclick="orderFood()">Buy now (${totalPrice.toFixed(2)}€)</button>
             `
 }

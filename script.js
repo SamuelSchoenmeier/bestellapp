@@ -191,3 +191,14 @@ function decreaseQuantity (basketIndex) {
 
     renderBasket();
 }
+
+
+
+
+function orderFood() {
+    document.getElementById("ordered_food_dialog").showModal();
+}
+
+function closeOrderedFood() {
+    document.getElementById("ordered_food_dialog").close();
+}
