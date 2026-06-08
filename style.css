@@ -95,7 +95,14 @@ main {
     gap: 32px;
 }
 
+.menu-headline {
+    display: flex;
+    justify-content: space-between;
+}
 
+.menucart-price {
+    padding-right: 16px;
+}
 
 /* </im JS block> */
 

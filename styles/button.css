@@ -18,11 +18,7 @@
 
 .delete-order-btn{
     background-color: var(--secondary-color);
-}
-
-.delete-order-btn:hover {
-    background-image: url(/icons/delete.png);
-    background-size: cover;
+    border: 0;
 }
 
 .add-to-order {

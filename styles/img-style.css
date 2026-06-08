@@ -57,4 +57,12 @@
 .empty-basket-shoppingcart {
     width: 100px;
 }
+
+.delete-order-img {
+    width: 22px;
+}
+.delete-order-img:hover {
+    content: url(/icons/delete.png);
+}
+
 /* </im JS block> */

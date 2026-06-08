@@ -8,7 +8,7 @@ function renderRamenTemplate(ramenIndex) {
                     <div class="menu-txt">
                         <div class="menu-headline">
                             <h4>${ramenAlt[ramenIndex]}</h4>
-                            <h4>${ramen[ramenIndex].price} €</h4>
+                            <h4 class="menucart-price">${ramen[ramenIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
                             <p>${ramen[ramenIndex].ingredients}</p>
@@ -28,7 +28,7 @@ function renderNoodleTemplate(noodleIndex) {
                     <div class="menu-txt">
                         <div class="menu-headline">
                             <h4>${noodleAlt[noodleIndex]}</h4>
-                            <h4>${noodels[noodleIndex].price} €</h4>
+                            <h4 class="menucart-price">${noodels[noodleIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
                             <p>${noodels[noodleIndex].ingredients}</p>
@@ -48,7 +48,7 @@ function renderSushiTemplate(sushiIndex) {
                     <div class="menu-txt">
                         <div class="menu-headline">
                             <h4>${sushiAlt[sushiIndex]}</h4>
-                            <h4>${sushis[sushiIndex].price} €</h4>
+                            <h4 class="menucart-price">${sushis[sushiIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
                             <p>${sushis[sushiIndex].ingredients}</p>
@@ -71,7 +71,7 @@ function renderBasketTemplate(basketIndex) {
                     <h4>${basket[basketIndex].quantity} x ${basket[basketIndex].name}</h4>
                     <div class="order-dish">
                         <div class="dish-info">
-                            <button class="delete-order-btn" onclick="decreaseQuantity(${basketIndex})"><img src="/icons/deletebasket-devault.png" alt="delet-order"></button>
+                            <button class="delete-order-btn" onclick="decreaseQuantity(${basketIndex})"><img class="delete-order-img" src="/icons/deletebasket-devault.png" alt="delet-order"></button>
                             <p>${basket[basketIndex].quantity}</p>
                             <button onclick="increaseQuantity(${basketIndex})" class="add-to-order"><img src="/icons/+.png"></button>
                         </div>
