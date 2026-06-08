@@ -64,5 +64,8 @@
 .delete-order-img:hover {
     content: url(/icons/delete.png);
 }
+.minus-sign {
+    font-size: 20px;
+}
 
 /* </im JS block> */
