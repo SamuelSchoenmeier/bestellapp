@@ -180,3 +180,12 @@ h2 {
     color: var(--thirt-color);
 }
 
+dialog {
+    background-color: var(--thirt-color);
+    height: 300px;
+    width: 500px;
+}
+
+.dialog-txt {
+    color: var(--secondary-color);
+}
