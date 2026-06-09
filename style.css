@@ -179,3 +179,24 @@ h2 {
     font-size: 20px;
     color: var(--thirt-color);
 }
+
+dialog[open] {
+    background-color: var(--thirt-color);
+    border: 0;
+    border-radius: 40px;
+    height: 225px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-txt {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.dialog-txt-container {
+    gap: 10px;
+}
