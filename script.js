@@ -105,7 +105,7 @@ function renderBasket() {
     if (basket.length === 0){
         renderEmptyBasket();
 
-        document.getElementById("total_basket");
+        document.getElementById("total_basket").innerHTML ="";
 
         return;
     }
