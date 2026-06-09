@@ -13,6 +13,7 @@
     <script src="script.js"></script>
     <script src="./scripts/templates.js"></script>
     <script src="./scripts/json.js"></script>
+    <script src="./styles/dialog.css"></script>
   </head>
   <body onload="init()">
     <header>
@@ -109,8 +110,10 @@
       </div>
 
       <dialog id="ordered_food_dialog">
-        <button class="close-dialog-btn" onclick="closeOrderedFood()"><img src="./icons/close.png" alt="close"></button>
-        <img class="dialog-img" src="./img/fooddelivery.png">
+        <div dialog-closebtn-container>
+          <button class="close-dialog-btn" onclick="closeOrderedFood()"><img src="./icons/close.png" alt="close"></button>
+        </div>
+          <img class="dialog-img" src="./img/fooddelivery.png">
         <span class="dialog-txt-container">
           <h2 class="dialog-txt">Order confirmed!</h2>
           <h3 class="dialog-txt">Your food is on the way!</h3>
