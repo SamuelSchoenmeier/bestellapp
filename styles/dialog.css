@@ -1,0 +1,31 @@
+.close-dialog-btn {
+    background-color: var(--thirt-color);
+    border: 0;
+}
+
+.dialog-img {
+    width: 150px;
+}
+
+.dialog-txt {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+dialog[open] {
+    background-color: var(--thirt-color);
+    border: 0;
+    border-radius: 40px;
+    height: 225px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*          /\__/\
+          =(  '.' )=   |
+            |`[]``\   /
+            |_n__n_| /
+*/

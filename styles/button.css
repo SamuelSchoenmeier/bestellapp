@@ -34,8 +34,3 @@
     border-radius: 32px;
     font-size: 20px;
 }
-
-.close-dialog-btn {
-    background-color: var(--thirt-color);
-    border: 0;
-}
