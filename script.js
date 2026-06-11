@@ -175,6 +175,11 @@ function addToBasket (item) {
         );
     }
     renderBasket()
+
+    renderRamenMenu();
+    rendernoodleMenu();
+    renderSushiMenu();
+
 }
 
 function increaseQuantity(basketIndex) {
@@ -192,6 +197,11 @@ function decreaseQuantity (basketIndex) {
     renderBasket();
 }
 
+function getDishQuantity(btnName) {
+    let item = basket.find(
+        basketItem => basketItem.name === btnName);
+    return item ? item.quantity : 0;
+}
 
 
 function orderFood() {

@@ -13,7 +13,13 @@ function renderRamenTemplate(ramenIndex) {
                         <div class="menu-ingredients">
                             <p>${ramen[ramenIndex].ingredients}</p>
                         </div>
-                        <button onclick="addRamenToBasket(${ramenIndex})" class="menu-btn"></button>
+                        <button onclick="addRamenToBasket(${ramenIndex})" class="menu-btn">
+                        ${
+                            getDishQuantity(ramen[ramenIndex].name) > 0
+                                ? `Added ${getDishQuantity(ramen[ramenIndex].name)}`
+                                : "Add to Basket"
+                        }
+                        </button>
                     </div>
                 </div>`
 }

@@ -61,8 +61,8 @@ let sushis = [
         "ingredients": "Rice, Vegetables, Fish"
     },
     {
-       "name": "Inside-Out-Rolls",
-       "price": 20.99,
-       "ingredients": "Rice, Smoked Salmon, Avocado, Cream Cheese, Fish Roe"
+        "name": "Inside-Out-Rolls",
+        "price": 20.99,
+        "ingredients": "Rice, Smoked Salmon, Avocado, Cream Cheese, Fish Roe"
     }
 ];

@@ -1,7 +1,6 @@
 .menu-btn {
     margin: 0;
     padding: 0;
-    background-image: url(/icons/addtobasket-default.png);
     width: 117px;
     height: 33px;
     border-radius: 33px;
@@ -12,7 +11,6 @@
 }
 
 .menu-btn:hover {
-    background-image: url(/icons/addtobasket-hover.png);
     border-color: var(--primary-color);
 }
 
