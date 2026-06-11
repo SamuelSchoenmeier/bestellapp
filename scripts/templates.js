@@ -42,8 +42,8 @@ function renderNoodleTemplate(noodleIndex) {
                         <button class="menu-btn" onclick="addNoodleToBasket(${noodleIndex})">
                         ${
                             getDishQuantity(noodels[noodleIndex].name) > 0
-                                ? `Added ${getDishQuantity(noodels[noodleIndex].name)}`
-                                : "Add to Basket"
+                                ? `<p class="added-to-basket">Added ${getDishQuantity(noodels[noodleIndex].name)}</p>`
+                                : `<p class="add-to-basket">Add to Basket</p>`
                         }
                         </button>
                     </div>
@@ -68,8 +68,8 @@ function renderSushiTemplate(sushiIndex) {
                         <button class="menu-btn" onclick="addSushiToBasket(${sushiIndex})">
                         ${
                             getDishQuantity(sushis[sushiIndex].name) > 0
-                                ? `Added ${getDishQuantity(sushis[sushiIndex].name)}`
-                                : "Add to Basket"
+                                ? `<p class="added-to-basket">Added ${getDishQuantity(sushis[sushiIndex].name)}</p>`
+                                : `<p class="add-to-basket">Add to Basket</p>`
                         }
                         </button>
                     </div>

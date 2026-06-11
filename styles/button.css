@@ -8,6 +8,12 @@
     margin-left: 435px;
     margin-bottom: 16px;
     margin-right: 8px;
+    border: 0;
+    background-color: white;
+}
+.menu-btn:hover {
+    background-color: lightpink;
+    color: var(--primary-color);
 }
 
 .menu-btn:hover {

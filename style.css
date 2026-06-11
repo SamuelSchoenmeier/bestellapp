@@ -107,12 +107,16 @@ main {
 .added-to-basket {
     margin: 0;
     text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .add-to-basket {
     margin: 0;
     text-align: center;
+    font-weight: 600;
 }
+
 
 
 /* </im JS block> */
