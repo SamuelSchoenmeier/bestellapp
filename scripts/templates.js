@@ -39,7 +39,13 @@ function renderNoodleTemplate(noodleIndex) {
                         <div class="menu-ingredients">
                             <p>${noodels[noodleIndex].ingredients}</p>
                         </div>
-                        <button class="menu-btn" onclick="addNoodleToBasket(${noodleIndex})"></button>
+                        <button class="menu-btn" onclick="addNoodleToBasket(${noodleIndex})">
+                        ${
+                            getDishQuantity(noodels[noodleIndex].name) > 0
+                                ? `Added ${getDishQuantity(noodels[noodleIndex].name)}`
+                                : "Add to Basket"
+                        }
+                        </button>
                     </div>
                 </div>`
 }
@@ -59,7 +65,13 @@ function renderSushiTemplate(sushiIndex) {
                         <div class="menu-ingredients">
                             <p>${sushis[sushiIndex].ingredients}</p>
                         </div>
-                        <button class="menu-btn" onclick="addSushiToBasket(${sushiIndex})"></button>
+                        <button class="menu-btn" onclick="addSushiToBasket(${sushiIndex})">
+                        ${
+                            getDishQuantity(sushis[sushiIndex].name) > 0
+                                ? `Added ${getDishQuantity(sushis[sushiIndex].name)}`
+                                : "Add to Basket"
+                        }
+                        </button>
                     </div>
                 </div>`
 }
