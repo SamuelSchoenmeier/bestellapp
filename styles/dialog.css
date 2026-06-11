@@ -1,6 +1,7 @@
 .close-dialog-btn {
     background-color: var(--thirt-color);
     border: 0;
+    padding: 8px 8px 0 0;
 }
 
 .dialog-img {
@@ -18,10 +19,6 @@ dialog[open] {
     border-radius: 40px;
     height: 225px;
     width: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /*          /\__/\
@@ -29,3 +26,16 @@ dialog[open] {
             |`[]``\   /
             |_n__n_| /
 */
+
+.close-dialog-btn-container{
+    text-align: end;
+}
+
+.section-dialog {
+    text-align: center;
+}
+
+dialog::backdrop {
+    opacity: 0.5;
+    background-color: var(--thirt-color);
+}

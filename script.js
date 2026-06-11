@@ -194,11 +194,23 @@ function decreaseQuantity (basketIndex) {
 
 
 
-
 function orderFood() {
-    document.getElementById("ordered_food_dialog").showModal();
+    const orderFoodRef = document.getElementById("ordered_food_dialog");
+
+    orderFoodRef.showModal();
+
+    setTimeout(() => {
+        orderFoodRef.close()
+
+        basket = [];
+
+        renderBasket();
+    },  4000);
+
 }
 
 function closeOrderedFood() {
-    document.getElementById("ordered_food_dialog").close();
+    const orderFoodRef = document.getElementById("ordered_food_dialog");
+
+    orderFoodRef.close();
 }

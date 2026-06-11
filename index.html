@@ -110,12 +110,16 @@
       </div>
 
       <dialog id="ordered_food_dialog">
-        <button class="close-dialog-btn" onclick="closeOrderedFood()"><img src="./icons/close.png" alt="close"></button>
-        <img class="dialog-img" src="./img/fooddelivery.png">
-        <span class="dialog-txt-container">
-          <h2 class="dialog-txt">Order confirmed!</h2>
-          <h3 class="dialog-txt">Your food is on the way!</h3>
-        </span>
+        <div class="close-dialog-btn-container">
+          <button class="close-dialog-btn" onclick="closeOrderedFood()"><img src="./icons/close.png" alt="close"></button>
+        </div>
+        <section class="section-dialog">
+          <img class="dialog-img" src="./img/fooddelivery.png">
+          <span class="dialog-txt-container">
+            <h2 class="dialog-txt">Order confirmed!</h2>
+            <h3 class="dialog-txt">Your food is on the way!</h3>
+          </span>
+        </section>
       </dialog>
 
     </main>
