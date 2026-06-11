@@ -185,6 +185,10 @@ function addToBasket (item) {
 function increaseQuantity(basketIndex) {
     basket[basketIndex].quantity++;
     renderBasket();
+
+    renderRamenMenu();
+    rendernoodleMenu();
+    renderSushiMenu();
 }
 
 function decreaseQuantity (basketIndex) {
@@ -195,6 +199,10 @@ function decreaseQuantity (basketIndex) {
     }
 
     renderBasket();
+    
+    renderRamenMenu();
+    rendernoodleMenu();
+    renderSushiMenu();
 }
 
 function getDishQuantity(btnName) {
