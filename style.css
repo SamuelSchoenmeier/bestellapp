@@ -104,6 +104,17 @@ main {
     padding-right: 16px;
 }
 
+.added-to-basket {
+    margin: 0;
+    text-align: center;
+}
+
+.add-to-basket {
+    margin: 0;
+    text-align: center;
+}
+
+
 /* </im JS block> */
 
 footer {
