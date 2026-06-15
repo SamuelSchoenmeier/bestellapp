@@ -1,0 +1,14 @@
+@media(max-width:1480px) {
+    .menu-content {
+        margin-left: 118px;
+    }
+
+    .menu-headline {
+        gap: 250px;
+        justify-content: flex-start;
+    }
+
+    .menu-btn {
+        margin-left: 335px;
+    }
+}
