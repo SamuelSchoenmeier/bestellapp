@@ -173,6 +173,10 @@ h2 {
     align-content: center;
 }
 
+h4 {
+    padding-left: 8px;
+}
+
 .rating-in-stars {
     color: var(--thirt-color);
     font-weight: 600;
