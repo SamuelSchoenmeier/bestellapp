@@ -55,6 +55,7 @@
 .menu-in-basket {
     background-color: var(--secondary-color);
     border-radius: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .dish-info {
@@ -85,4 +86,9 @@ tr {
     flex-direction: column;
     gap: 20px;
     padding-top: 50px;
+}
+
+.nav-basket {
+    display: flex;
+    justify-content: space-between;
 }

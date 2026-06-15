@@ -211,18 +211,31 @@ function getDishQuantity(btnName) {
     return item ? item.quantity : 0;
 }
 
+function removeDish(basketIndex) {
+    basket.splice(basketIndex, 1);
+
+    renderBasket();
+
+    renderRamenMenu();
+    rendernoodleMenu();
+    renderSushiMenu();
+}
 
 function orderFood() {
     const orderFoodRef = document.getElementById("ordered_food_dialog");
 
     orderFoodRef.showModal();
 
-    setTimeout(() => {
-        orderFoodRef.close()
-
         basket = [];
 
         renderBasket();
+        renderRamenMenu();
+        rendernoodleMenu();
+        renderSushiMenu();
+
+    setTimeout(() => {
+        orderFoodRef.close()
+
     },  4000);
 
 }

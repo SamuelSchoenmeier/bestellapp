@@ -86,7 +86,16 @@ function renderSushiTemplate(sushiIndex) {
 
 function renderBasketTemplate(basketIndex) {
     return `    <div class="menu-in-basket">
-                    <h4>${basket[basketIndex].quantity} x ${basket[basketIndex].name}</h4>
+                    <div class="nav-basket">
+                        <h4>${basket[basketIndex].quantity} x ${basket[basketIndex].name}</h4>
+                        <button class="delete-order-btn" onclick="removeDish(${basketIndex})">
+                            ${
+                                basket[basketIndex].quantity > 1
+                                    ? `<img class="delete-order-img" src="/icons/deletebasket-devault.png" alt="" alt="delete"/>`
+                                    : ``
+                            }
+                        </button>
+                    </div>
                     <div class="order-dish">
                         <div class="dish-info">
                             <button class="delete-order-btn" onclick="decreaseQuantity(${basketIndex})">
