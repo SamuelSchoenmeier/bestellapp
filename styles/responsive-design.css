@@ -12,3 +12,9 @@
         margin-left: 335px;
     }
 }
+
+@media(max-width:1220px) {
+    .menu-content {
+        margin-left: 16px;
+    }
+}

@@ -97,18 +97,21 @@ function renderEmptyBasket() {
 
 function renderBasket() {
     let basketRef = document.getElementById("basket_content");
+    let basketContentRef = document.getElementById("whole_basket");
     let emptyBasketRef = document.getElementById("empty_basket");
 
     basketRef.innerHTML = "";
     emptyBasketRef.innerHTML = "";
 
     if (basket.length === 0){
-        renderEmptyBasket();
+        basketContentRef.style.display = "none";
 
         document.getElementById("total_basket").innerHTML ="";
 
         return;
     }
+
+    basketContentRef.style.display = "block";
 
     for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
         let totalPrice = basket[basketIndex].price * basket[basketIndex].quantity;
@@ -235,7 +238,6 @@ function orderFood() {
 
     setTimeout(() => {
         orderFoodRef.close()
-
     },  4000);
 
 }
