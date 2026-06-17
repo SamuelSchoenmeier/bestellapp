@@ -56,6 +56,7 @@
     background-color: var(--secondary-color);
     border-radius: 10px;
     margin: 10px 0 10px 0;
+    padding: 0 10px 0 10px;
 }
 
 .dish-info {
@@ -64,7 +65,7 @@
 
 .order-dish {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 table {
