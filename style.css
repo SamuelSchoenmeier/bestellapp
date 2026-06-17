@@ -102,6 +102,7 @@ main {
 
 .menucart-price {
     padding-right: 16px;
+    text-align: end;
 }
 
 .added-to-basket {
@@ -174,7 +175,8 @@ h2 {
 }
 
 h4 {
-    padding-left: 8px;
+    padding: 0px;
+    flex: auto;
 }
 
 .rating-in-stars {

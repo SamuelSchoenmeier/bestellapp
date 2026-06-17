@@ -5,7 +5,7 @@
 
     .menu-headline {
         gap: 250px;
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 
     .menu-btn {
@@ -44,5 +44,10 @@
 
     .menu-btn {
         margin-bottom: 8px;
+    }
+
+    .ingredients-txt {
+        margin: 0;
+        width: 180px;
     }
 }

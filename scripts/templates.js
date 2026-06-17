@@ -11,7 +11,7 @@ function renderRamenTemplate(ramenIndex) {
                             <h4 class="menucart-price">${ramen[ramenIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
-                            <p>${ramen[ramenIndex].ingredients}</p>
+                            <p class="ingredients-txt">${ramen[ramenIndex].ingredients}</p>
                         </div>
                         <button onclick="addRamenToBasket(${ramenIndex})" class="menu-btn">
                         ${
