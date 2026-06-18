@@ -1,13 +1,8 @@
 .menu-btn {
-    margin: 0;
-    padding: 0;
+
     width: 117px;
     height: 33px;
     border-radius: 33px;
-    text-align: end;
-    margin-left: 435px;
-    margin-bottom: 16px;
-    margin-right: 8px;
     border: 0;
     background-color: white;
 }
