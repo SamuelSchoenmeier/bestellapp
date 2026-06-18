@@ -131,6 +131,20 @@ main {
     margin-bottom: 0;
 }
 
+.menu-text {
+    display: flex;
+}
+
+.dishname-ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-add-btn {
+    display: flex;
+    flex-direction: column;
+}
+
 /* </im JS block> */
 
 footer {

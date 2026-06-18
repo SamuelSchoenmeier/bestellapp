@@ -6,20 +6,23 @@ function renderRamenTemplate(ramenIndex) {
                         alt="${ramenAlt[ramenIndex]}"/>
                     
                     <div class="menu-txt">
-                        <div class="menu-headline">
+                        <div class="dishname-ingredients">
                             <h4 class="dish-name">${ramenAlt[ramenIndex]}</h4>
+                            <div class="menu-ingredients">
+                                <p class="ingredients-txt">${ramen[ramenIndex].ingredients}</p>
+                            </div>
+                        </div>
+                    
+                        <div class="price-add-btn">
                             <h4 class="menucart-price">${ramen[ramenIndex].price} €</h4>
+                            <button onclick="addRamenToBasket(${ramenIndex})" class="menu-btn">
+                            ${
+                                getDishQuantity(ramen[ramenIndex].name) > 0
+                                    ? `<p class="added-to-basket">Added ${getDishQuantity(ramen[ramenIndex].name)}</p>`
+                                    : `<p class="add-to-basket">Add to Basket</p>`
+                            }
+                            </button>
                         </div>
-                        <div class="menu-ingredients">
-                            <p class="ingredients-txt">${ramen[ramenIndex].ingredients}</p>
-                        </div>
-                        <button onclick="addRamenToBasket(${ramenIndex})" class="menu-btn">
-                        ${
-                            getDishQuantity(ramen[ramenIndex].name) > 0
-                                ? `<p class="added-to-basket">Added ${getDishQuantity(ramen[ramenIndex].name)}</p>`
-                                : `<p class="add-to-basket">Add to Basket</p>`
-                        }
-                        </button>
                     </div>
                 </div>`
 }
