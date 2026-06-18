@@ -97,12 +97,13 @@ main {
 
 .menu-headline {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .menucart-price {
     padding-right: 16px;
     text-align: end;
+    margin-bottom: 0;
 }
 
 .added-to-basket {
@@ -118,7 +119,17 @@ main {
     font-weight: 600;
 }
 
+.ingredients-txt {
+    max-width: 350px;
+}
 
+.menukart-btn-wrapper {
+    height: 45px;
+}
+
+.dish-name {
+    margin-bottom: 0;
+}
 
 /* </im JS block> */
 

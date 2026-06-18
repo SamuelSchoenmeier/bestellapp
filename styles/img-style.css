@@ -37,6 +37,9 @@
     height: 100px;
 }
 
+.menu-ingredients {
+    padding-bottom: 8px;
+}
 
 /*          /\__/\               */
 /*        =(  '.' )=   |         */
@@ -49,10 +52,11 @@
 /* <im JS block> */
 
 .ramen-menu-img {
-    height: 132px;
+    height: 155px;
     padding: 8px;
     border-radius: 16px;
     min-width: 192px;
+    max-width: 192px;
     object-fit: cover;
 }
 

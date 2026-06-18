@@ -7,7 +7,7 @@ function renderRamenTemplate(ramenIndex) {
                     
                     <div class="menu-txt">
                         <div class="menu-headline">
-                            <h4>${ramenAlt[ramenIndex]}</h4>
+                            <h4 class="dish-name">${ramenAlt[ramenIndex]}</h4>
                             <h4 class="menucart-price">${ramen[ramenIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
@@ -33,19 +33,21 @@ function renderNoodleTemplate(noodleIndex) {
                     
                     <div class="menu-txt">
                         <div class="menu-headline">
-                            <h4>${noodleAlt[noodleIndex]}</h4>
+                            <h4 class="dish-name">${noodleAlt[noodleIndex]}</h4>
                             <h4 class="menucart-price">${noodels[noodleIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
-                            <p>${noodels[noodleIndex].ingredients}</p>
+                            <p class="ingredients-txt">${noodels[noodleIndex].ingredients}</p>
                         </div>
-                        <button class="menu-btn" onclick="addNoodleToBasket(${noodleIndex})">
-                        ${
-                            getDishQuantity(noodels[noodleIndex].name) > 0
-                                ? `<p class="added-to-basket">Added ${getDishQuantity(noodels[noodleIndex].name)}</p>`
-                                : `<p class="add-to-basket">Add to Basket</p>`
-                        }
-                        </button>
+                        <div class="menukart-btn-wrapper">
+                            <button class="menu-btn" onclick="addNoodleToBasket(${noodleIndex})">
+                            ${
+                                getDishQuantity(noodels[noodleIndex].name) > 0
+                                    ? `<p class="added-to-basket">Added ${getDishQuantity(noodels[noodleIndex].name)}</p>`
+                                    : `<p class="add-to-basket">Add to Basket</p>`
+                            }
+                            </button>
+                        </div>
                     </div>
                 </div>`
 }
@@ -59,11 +61,11 @@ function renderSushiTemplate(sushiIndex) {
                     
                     <div class="menu-txt">
                         <div class="menu-headline">
-                            <h4>${sushiAlt[sushiIndex]}</h4>
+                            <h4 class="dish-name">${sushiAlt[sushiIndex]}</h4>
                             <h4 class="menucart-price">${sushis[sushiIndex].price} €</h4>
                         </div>
                         <div class="menu-ingredients">
-                            <p>${sushis[sushiIndex].ingredients}</p>
+                            <p class="ingredients-txt">${sushis[sushiIndex].ingredients}</p>
                         </div>
                         <button class="menu-btn" onclick="addSushiToBasket(${sushiIndex})">
                         ${

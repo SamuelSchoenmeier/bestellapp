@@ -13,7 +13,7 @@
     }
 }
 
-@media(max-width:1220px) {
+@media(max-width:1230px) {
     .menu-content {
         margin-left: 16px;
     }
@@ -49,5 +49,19 @@
     .ingredients-txt {
         margin: 0;
         width: 180px;
+    }
+
+    .section-basket {
+        width: 245px;
+    }
+}
+
+@media(max-width:927px) {
+    .menucart-price {
+        padding-right: 40px;
+    }
+
+    .menu-btn {
+        margin-left: 251px;
     }
 }
