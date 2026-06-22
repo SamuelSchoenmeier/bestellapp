@@ -1,5 +1,4 @@
 .menu-btn {
-
     width: 117px;
     height: 33px;
     border-radius: 33px;
@@ -19,6 +18,7 @@
 .delete-order-btn{
     background-color: var(--secondary-color);
     border: 0;
+    padding: 0;
 }
 
 .add-to-order {

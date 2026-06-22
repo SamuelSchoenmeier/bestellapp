@@ -135,6 +135,10 @@ main {
     min-width: 390px;
 }
 
+.dish-name {
+    margin-bottom: 0;
+}
+
 /* </im JS block> */
 
 footer {

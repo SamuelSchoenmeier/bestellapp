@@ -30,7 +30,7 @@ let noodels = [
     {
         "name": "Yakisoba",
         "price": 8.99,
-        "ingredients": "Prok Belly, Cabbage, Vegetables, Oyster Sauce, Ketchup"
+        "ingredients": "Prok, Vegetables, Oyster, Ketchup"
     },
     {
         "name": "Savory Zaru Soba",
@@ -40,7 +40,7 @@ let noodels = [
     {
         "name": "Tempura Udon",
         "price": 14.00,
-        "ingredients": "Dashi Stock, Soy Sauce, Mirin, Tempura Fried In Oil"
+        "ingredients": "Dashi, Soy Sauce, Tempura Fried In Oil"
     }
 ];
 
@@ -48,7 +48,7 @@ let sushis = [
     {
         "name": "Temaki",
         "price": 15.00,
-        "ingredients": "Rice, Fish, Cooked Seafood, Vegetables, Wasabi"
+        "ingredients": "Rice, Fish, Seafood, Vegetables, Wasabi"
     },
     {
         "name": "Nigiri",
@@ -63,6 +63,6 @@ let sushis = [
     {
         "name": "Inside-Out-Rolls",
         "price": 20.99,
-        "ingredients": "Rice, Smoked Salmon, Avocado, Cream Cheese, Fish Roe"
+        "ingredients": "Rice, Salmon, Avocado, cheese, Fish"
     }
 ];

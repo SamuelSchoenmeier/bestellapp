@@ -2,4 +2,89 @@
     .menu-content {
         width: 670px;
     }
+
+    .ingredients-txt {
+        min-width: 330px;
+        max-width: 330px;
+    }
+}
+
+@media(max-width: 1145px) {
+    .menu-content {
+        width: 650px;
+        margin-left: 30px;
+        height: 180px;
+    }
+
+    .ingredients-txt {
+        max-width: 310px;
+        min-width: 310px;
+    }
+
+    .menu-btn {
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 1061px) {
+    .section-basket {
+        width: 255px;
+    }
+
+    .menu-content {
+        margin-left: 8px;
+    }
+}
+
+@media(max-width: 997px) {
+    .ingredients-txt {
+        max-width: 268px;
+        min-width: 268px;
+    }
+
+    .menu-content {
+        width: 608px;
+    }
+}
+
+@media (max-width: 954px) {
+    .ingredients-txt {
+        max-width: 230px;
+        min-width: 230px;
+    }
+
+    .menu-content {
+        width: 570px;
+    }
+}
+
+@media(max-width: 915px) {
+    .ramen-menu-img {
+        height: 133px;
+        min-width: 170px;
+        max-width: 170px;
+    }
+
+    .menu-content {
+        width: 548px;
+        height: 158px;
+    }
+}
+
+@media(max-width: 894px) {
+    .ingredients-txt {
+        max-width: 180px;
+        min-width: 180px;
+    }
+
+    .menu-content {
+        width: 498px;
+    }
+}
+
+@media(max-width: 844px) {
+    .section-basket {
+        padding: 20px;
+        width: 235px;
+    }
 }
