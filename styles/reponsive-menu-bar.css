@@ -31,10 +31,11 @@
 
     .responsive-menu-bar {
         background-color: var(--thirt-color);
-        width: 100vh;
+        width: 100%;
         position: sticky;
         bottom: 0;
         display: flex;
+        justify-content: space-between;
     }
 
     .responsive-menu-bar-container {

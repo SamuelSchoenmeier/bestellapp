@@ -41,4 +41,26 @@
     background-color: var(--thirt-color);
     border: 0;
     padding: 0;
+    margin: 16px;
+}
+
+.reponsive-menu-bar-home-img {
+    height: 24px;
+}
+.reponsive-menu-bar-home-img:hover {
+    background-image: url(/icons/home.active.png);
+    height: 24px;
+}
+
+.reponsive-menu-bar-profile-img {
+    height: 24px;
+
+}
+
+.reponsive-menu-bar-food-img {
+    height: 24px;
+}
+
+.reponsive-menu-bar-basket-img {
+    height: 24px;
 }
