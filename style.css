@@ -85,10 +85,17 @@ main {
 .menu {
     padding-top: 120px;
     margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .menu-content {
     background-color: var(--secondary-color);
+    margin-left: 100px;
+    display: flex;
+    width: 730px;
+    border-radius: 20px;
 }
 
 .added-to-basket {
@@ -104,11 +111,10 @@ main {
     font-weight: 600;
 }
 
-
-
-
-
-
+.menucart-price {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .menu-txt {
     display: flex;
@@ -122,6 +128,11 @@ main {
 .price-add-btn {
     display: flex;
     flex-direction: column;
+}
+
+.ingredients-txt {
+    max-width: 390px;
+    min-width: 390px;
 }
 
 /* </im JS block> */
