@@ -1,0 +1,44 @@
+.responsive-menu-bar-container {
+        display: none;
+    }
+
+@media(max-width: 803px) {
+    .section-basket {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-content {
+        width: 690px;
+        height: 176px;
+    }
+
+    .ramen-menu-img {
+        min-width: 192px;
+        max-width: 192px;
+        height: 155px;
+    }
+
+    .ingredients-txt {
+        max-width: 356px;
+        min-width: 356px;
+    }
+
+    .responsive-menu-bar {
+        background-color: var(--thirt-color);
+        width: 100vh;
+        position: sticky;
+        bottom: 0;
+        display: flex;
+    }
+
+    .responsive-menu-bar-container {
+        display: flex;
+    }
+}
+

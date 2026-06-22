@@ -34,3 +34,11 @@
     border-radius: 32px;
     font-size: 20px;
 }
+
+
+
+.reponsive-menu-bar-btn {
+    background-color: var(--thirt-color);
+    border: 0;
+    padding: 0;
+}
