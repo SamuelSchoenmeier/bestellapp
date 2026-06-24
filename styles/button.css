@@ -35,7 +35,10 @@
     font-size: 20px;
 }
 
-
+/*          /\__/\               */
+/*        =(  '.' )=   |         */
+/*          |`[]``\   /          */
+/*          |_n__n_| /           */
 
 .reponsive-menu-bar-btn {
     background-color: var(--thirt-color);
@@ -44,23 +47,31 @@
     margin: 16px;
 }
 
-.reponsive-menu-bar-home-img {
-    height: 24px;
+.reponsive-menu-bar-home {
+    height: 35px;
+    width: 35px;
+    background-image: url(/icons/home-default.png);
+    background-color: var(--thirt-color);
+    background-size: contain;
+    border: 0;
+    margin: 8px 0 8px 8px;
 }
-.reponsive-menu-bar-home-img:hover {
+.reponsive-menu-bar-home:hover {
+    height: 30px;
+    width: 30px;
     background-image: url(/icons/home.active.png);
-    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 8px 0 8px 8px;
 }
 
 .reponsive-menu-bar-profile-img {
-    height: 24px;
 
 }
 
 .reponsive-menu-bar-food-img {
-    height: 24px;
 }
 
 .reponsive-menu-bar-basket-img {
-    height: 24px;
 }
