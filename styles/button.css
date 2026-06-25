@@ -50,15 +50,44 @@
 .reponsive-menu-bar-home {
     height: 35px;
     width: 35px;
+    background-image: url(/icons/home-default.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin: 8px 0 8px 16px;
 }
 .reponsive-menu-bar-home:hover {
+    height: 35px;
+    width: 35px;
+    background-image: url(/icons/home-hover.png);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
 }
+.reponsive-menu-bar-home:active {
+    background-color: var(--primary-color);
+}
+
 
 .reponsive-menu-bar-profile {
     height: 35px;
     width: 35px;
+    background-image: url(/icons/person-default.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin: 8px 0 8px 0;
 }
 .reponsive-menu-bar-profile:hover {
+    width: 35px;
+    height: 35px;
+    background-image: url(/icons/person-hover.png);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+.reponsive-menu-bar-profile:active {
+    background-color: var(--primary-color);
 }
 
 .reponsive-menu-bar-food {
@@ -75,11 +104,30 @@
     height: 35px;
     width: 35px;
     background-image: url(/icons/takeout_dining_hover.png);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+.reponsive-menu-bar-food:active {
+    background-color: var(--primary-color);
 }
 
 .reponsive-menu-bar-basket {
     width: 35px;
     height: 35px;
+    background-image: url(/icons/shopping_cart-default.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 8px 16px 8px 0;
+    border: 0;
 }
 .reponsive-menu-bar-basket:hover {
+    width: 35px;
+    height: 35px;
+    background-image: url(/icons/shopping_cart-hover.png);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+.reponsive-menu-bar-basket:active {
+    background-color: var(--primary-color);
 }
