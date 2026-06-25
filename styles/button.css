@@ -50,28 +50,36 @@
 .reponsive-menu-bar-home {
     height: 35px;
     width: 35px;
-    background-image: url(/icons/home-default.png);
-    background-color: var(--thirt-color);
-    background-size: contain;
-    border: 0;
-    margin: 8px 0 8px 8px;
 }
 .reponsive-menu-bar-home:hover {
-    height: 30px;
-    width: 30px;
-    background-image: url(/icons/home.active.png);
-    background-size: contain;
+}
+
+.reponsive-menu-bar-profile {
+    height: 35px;
+    width: 35px;
+}
+.reponsive-menu-bar-profile:hover {
+}
+
+.reponsive-menu-bar-food {
+    height: 35px;
+    width: 35px;
+    background-image: url(/icons/takeout_dining_default.png);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 8px 0 8px 8px;
+    margin-top: 8px;
+    border: none;
+}
+.reponsive-menu-bar-food:hover {
+    height: 35px;
+    width: 35px;
+    background-image: url(/icons/takeout_dining_hover.png);
 }
 
-.reponsive-menu-bar-profile-img {
-
+.reponsive-menu-bar-basket {
+    width: 35px;
+    height: 35px;
 }
-
-.reponsive-menu-bar-food-img {
-}
-
-.reponsive-menu-bar-basket-img {
+.reponsive-menu-bar-basket:hover {
 }

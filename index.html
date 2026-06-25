@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bestellapp</title>
+    <link rel="icon" type="img" href="./icons/takeout_dining_hover.png">
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./styles/basket.css">
@@ -62,6 +63,7 @@
 
     <main>
       
+      <!--Ramen auf der Karte-->
       <div class="main-wrapper content">
         <div>
           <section class="section-menu">
@@ -75,7 +77,7 @@
             <div class="menu" id="ramen_menu"></div>
           </section>
 
-
+          <!--Nudeln auf der Karte-->
           <section class="section-menu">
             <div class="menu-titles">
               <div class="menu-titles-elements">
@@ -87,7 +89,7 @@
             <div class="menu" id="noodle_menu"></div>
           </section>
 
-
+          <!--Sushi auf der Karte -->
           <section class="section-menu">
             <div class="menu-titles">
               <div class="menu-titles-elements">
@@ -100,6 +102,8 @@
           </section>
         </div>
 
+
+        <!--Basket-->
         <section class="section-basket" id="whole_basket">
           <h3 class="h3-basket">Your Basket</h3>
           <div class="basket" >
@@ -142,22 +146,17 @@
         </ul>
     </footer>
 
+    <!--Menu bar öffnet sich bei einer breite ab 803px und weniger-->
     <section class="responsive-menu-bar">
-        <div class="responsive-menu-bar-container">
-          <button class="reponsive-menu-bar-home"></button>
-        </div>
 
-        <div class="responsive-menu-bar-container">
-          <button class="reponsive-menu-bar-profile"></button>
-        </div>
+      <button class="reponsive-menu-bar-home"></button>
 
-        <div class="responsive-menu-bar-container">
-          <button class="reponsive-menu-bar-food"></button>
-        </div>
+      <button class="reponsive-menu-bar-profile"></button>
 
-        <div class="responsive-menu-bar-container">
-          <button class="reponsive-menu-bar-basket"></button>
-        </div>
+      <button class="reponsive-menu-bar-food"></button>
+
+      <button class="reponsive-menu-bar-basket"></button>
+
       </section>
   </body>
 </html>
