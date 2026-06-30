@@ -37,7 +37,7 @@
     .responsive-menu-bar {
         background-color: var(--thirt-color);
         width: 100%;
-        position: sticky;
+        position: fixed;
         bottom: 0;
         display: flex;
         justify-content: space-between;

@@ -93,3 +93,21 @@ tr {
     display: flex;
     justify-content: space-between;
 }
+
+/* responisve Basket */
+
+.content {
+    position: relative;
+}
+
+.resp-basket {
+    background-color: var(--thirt-color);
+    width: 100vh;
+    height: 100vh;
+    top: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 30px;
+
+    position: absolute;
+}

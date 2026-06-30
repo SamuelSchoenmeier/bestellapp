@@ -13,7 +13,7 @@
     margin: 0;
 }
 
-dialog[open] {
+.order-food-dialog[open] {
     background-color: var(--thirt-color);
     border: 0;
     border-radius: 40px;
@@ -21,11 +21,6 @@ dialog[open] {
     width: 340px;
 }
 
-/*          /\__/\
-          =(  '.' )=   |
-            |`[]``\   /
-            |_n__n_| /
-*/
 
 .close-dialog-btn-container{
     text-align: end;
@@ -35,7 +30,18 @@ dialog[open] {
     text-align: center;
 }
 
-dialog::backdrop {
+.order-food-dialog::backdrop {
     opacity: 0.5;
     background-color: var(--thirt-color);
+}
+
+/*          /\__/\
+          =(  '.' )=   |
+            |`[]``\   /
+            |_n__n_| /
+*/
+
+
+.resp-basket-dialog {
+    
 }
