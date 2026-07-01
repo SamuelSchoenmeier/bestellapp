@@ -259,9 +259,10 @@ function closeOrderedFood() {
     orderFoodRef.close();
 }
 
-function openRespBasket() {
-    const respBaketRef = document.getElementById("responsive_basket");
-    respBaketRef.showModal();
+function toggleRespBasket() {
+    document
+        .getElementById("whole_basket")
+        .classList.toggle("show");
 }
 
 function closeRespBasket() {

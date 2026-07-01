@@ -93,3 +93,19 @@ tr {
     display: flex;
     justify-content: space-between;
 }
+
+/* mobile basket*/
+
+@media(max-width: 803px) {
+    .section-basket {
+        display: none;
+        position: fixed;
+        bottom: 70px;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+    .section-basket.show {
+        display: block;
+    }
+}
