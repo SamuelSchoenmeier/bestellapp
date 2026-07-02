@@ -263,10 +263,18 @@ function toggleRespBasket() {
     document
         .getElementById("whole_basket")
         .classList.add("show");
+
+    document
+        .getElementById("resp_menu_bar")
+        .classList.remove("responsive-menu-bar");
 }
 
 function closeRespBAsket() {
     document
         .getElementById("whole_basket")
         .classList.remove("show");
+
+    document
+        .getElementById("resp_menu_bar")
+        .classList.add("responsive-menu-bar");
 }

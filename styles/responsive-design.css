@@ -114,5 +114,26 @@
 
     .close-responisve-basket {
         display: block;
+        justify-self: flex-end;
+        border: 0;
+        background-color: transparent;
+        color: var(--secondary-color);
+        font-size: 30px;
+    }
+
+    .order-in-basket {
+        width: 550px;
+        justify-self: center;
+        height: 390px;
+    }
+
+    .total-basket-styling {
+        padding-top: 170px;
+        width: 550px;
+        justify-self: center;
+    }
+
+    .h3-basket {
+        margin-top: 0;
     }
 }

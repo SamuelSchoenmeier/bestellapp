@@ -48,8 +48,11 @@
     height: 340px;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: var(--primary-color)  var(--secondary-color);
+    scrollbar-color: var(--primary-color)  transparent;
     padding: 8px;
+}
+.order-in-basket::-webkit-scrollbar-thumb {
+    background-color: black;
 }
 
 .menu-in-basket {
