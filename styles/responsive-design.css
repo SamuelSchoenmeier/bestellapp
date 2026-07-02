@@ -98,4 +98,21 @@
     footer {
         height: 180px;
     }
+
+    .section-basket {
+        display: none;
+        position: fixed;
+        bottom:0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .section-basket.show {
+        display: block;
+    }
+
+    .close-responisve-basket {
+        display: block;
+    }
 }

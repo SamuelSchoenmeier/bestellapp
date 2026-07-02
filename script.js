@@ -262,10 +262,11 @@ function closeOrderedFood() {
 function toggleRespBasket() {
     document
         .getElementById("whole_basket")
-        .classList.toggle("show");
+        .classList.add("show");
 }
 
-function closeRespBasket() {
-    const respBasketRef = document.getElementById("responsive_basket");
-    respBasketRef.close();
+function closeRespBAsket() {
+    document
+        .getElementById("whole_basket")
+        .classList.remove("show");
 }

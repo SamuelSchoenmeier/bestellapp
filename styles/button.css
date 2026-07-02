@@ -131,3 +131,7 @@
 .reponsive-menu-bar-basket:active {
     background-color: var(--primary-color);
 }
+
+.close-responisve-basket {
+    display: none;
+}
