@@ -13,11 +13,11 @@
 }
 
 .main-logo-img {
-    height: 190px;
+    height: auto;
     border: 20px solid var(--secondary-color);
     background-color: var(--secondary-color);
     border-radius: 100px;
-    width: 190px;
+    width: 160px;
     object-fit: cover;
 }
 

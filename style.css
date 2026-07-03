@@ -29,11 +29,11 @@ nav {
     background-image: url(/img/hero_bg.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 18vh;
+    height: 13vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 225px;
 }
 
 .rating {

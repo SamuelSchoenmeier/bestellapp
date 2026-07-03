@@ -136,4 +136,34 @@
     .h3-basket {
         margin-top: 0;
     }
+
+    .main-logo-img {
+        width: 150px;
+    }
+
+    .hero-section {
+        height: 11vh;
+    }
+}
+
+@media(max-width: 700px) {
+    .main-logo-img {
+        width: 100px;
+        border: 10px solid var(--secondary-color);
+
+    }
+
+    .hero-section {
+        height: 7vh;
+    }
+}
+
+@media(max-width: 550px) {
+    .hero-section {
+        height: 6vh;
+    }
+
+    .main-logo-img {
+        width: 75px;
+    }
 }
