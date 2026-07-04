@@ -9,6 +9,9 @@ body {
     border: 0;
     font-family: 'Yusei Magic', system-ui, Arial, sans-serif;;
 }
+body.no-scroll {
+    overflow: hidden;
+}
 
 .content {
     max-width: 1440px;

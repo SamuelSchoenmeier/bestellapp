@@ -267,6 +267,8 @@ function toggleRespBasket() {
     document
         .getElementById("resp_menu_bar")
         .classList.remove("responsive-menu-bar");
+
+    document.body.classList.add("no-scroll");
 }
 
 function closeRespBAsket() {
@@ -277,4 +279,6 @@ function closeRespBAsket() {
     document
         .getElementById("resp_menu_bar")
         .classList.add("responsive-menu-bar");
+
+    document.body.classList.remove("no-scroll");
 }
