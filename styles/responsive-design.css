@@ -99,6 +99,12 @@
         height: 180px;
     }
 
+    .menu-content {
+        width: 690px;
+        height: 176px;
+        margin: 0;
+    }
+
     .section-basket {
         display: none;
         position: fixed;
