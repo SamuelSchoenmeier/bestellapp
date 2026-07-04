@@ -110,6 +110,7 @@
     }
     .section-basket.show {
         display: block;
+        padding-right: 0;
     }
 
     .close-responisve-basket {
@@ -135,6 +136,8 @@
 
     .h3-basket {
         margin-top: 0;
+        margin-bottom: 55px;
+        font-size: 45px;
     }
 
     .main-logo-img {
@@ -144,17 +147,30 @@
     .hero-section {
         height: 11vh;
     }
+
+    .empty-basket {
+        gap: 100px;
+    }
+
+    .empty-basket-shoppingcart {
+        width: 120px;
+    }
 }
 
 @media(max-width: 700px) {
     .main-logo-img {
         width: 100px;
         border: 10px solid var(--secondary-color);
-
     }
 
     .hero-section {
         height: 7vh;
+    }
+}
+
+@media(max-width: 590px) {
+    .empty-basket-text {
+        width: 475px;
     }
 }
 
@@ -165,5 +181,17 @@
 
     .main-logo-img {
         width: 75px;
+    }
+}
+
+@media(max-width: 490px) {
+    .empty-basket-text {
+        width: 375px;
+    }
+}
+
+@media(max-width: 390px) {
+    .empty-basket-text {
+        width: 275px;
     }
 }
