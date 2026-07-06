@@ -15,17 +15,6 @@
         align-items: center;
     }
 
-    .ramen-menu-img {
-        min-width: 192px;
-        max-width: 192px;
-        height: 155px;
-    }
-
-    .ingredients-txt {
-        max-width: 356px;
-        min-width: 356px;
-    }
-
     .responsive-menu-bar {
         background-color: var(--thirt-color);
         width: 100%;

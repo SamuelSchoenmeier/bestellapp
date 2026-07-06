@@ -105,6 +105,12 @@
         margin: 0;
     }
 
+    .ingredients-txt {
+        max-width: 356px;
+        min-width: 356px;
+    }
+
+
     .section-basket {
         display: none;
         position: fixed;
@@ -161,6 +167,34 @@
     .empty-basket-shoppingcart {
         width: 120px;
     }
+
+    .ramen-menu-img {
+        min-width: 192px;
+        max-width: 192px;
+        height: 155px;
+    }
+}
+
+@media(max-width:718px) {
+    .menu-content {
+        width: 640px;
+    }
+
+    .ingredients-txt {
+        max-width: 306px;
+        min-width: 306px;
+    }
+}
+
+@media(max-width:669px) {
+    .menu-content {
+        width: 580px;
+    }
+
+    .ingredients-txt {
+        max-width: 246px;
+        min-width: 246px;
+    }
 }
 
 @media(max-width: 700px) {
@@ -171,6 +205,23 @@
 
     .hero-section {
         height: 7vh;
+    }
+}
+
+@media(max-width:606px) {
+    .menu-content {
+        width: 510px;
+        height: 155px;
+    }
+
+    .ingredients-txt {
+        max-width: 176px;
+        min-width: 176px;
+    }
+
+    .ramen-menu-img {
+        height: 135px;
+
     }
 }
 
