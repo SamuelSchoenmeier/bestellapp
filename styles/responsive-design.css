@@ -173,6 +173,11 @@
         max-width: 192px;
         height: 155px;
     }
+
+    .menu-titles-elements {
+        justify-content: center;
+        padding: 0;
+    }
 }
 
 @media(max-width:718px) {
