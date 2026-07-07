@@ -271,6 +271,49 @@
     }
 }
 
+@media(max-width: 540px) {
+    .menu-content {
+        flex-direction: column;
+        height: 290px;
+        width: 457px;
+    }
+
+    .ramen-menu-img {
+        min-width: auto;
+        max-width: none;
+        width: 440px;
+        border-radius: 30px;
+    }
+
+    .menu-txt {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .price-add-btn {
+        flex-direction: row;
+    }
+
+    .menucart-price {
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .menu-ingredients {
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .ingredients-txt {
+        min-width: auto;
+        max-width: none;
+    }
+}
+
 @media(max-width: 490px) {
     .empty-basket-text {
         width: 375px;
