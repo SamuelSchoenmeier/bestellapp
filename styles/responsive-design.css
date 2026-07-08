@@ -292,6 +292,7 @@
 
     .price-add-btn {
         flex-direction: row;
+        padding: 0 8px;
     }
 
     .menucart-price {
@@ -304,7 +305,7 @@
     }
 
     h4 {
-        font-size: 23px;
+        font-size: 20px;
         margin: 0;
     }
 
@@ -317,6 +318,37 @@
 @media(max-width: 490px) {
     .empty-basket-text {
         width: 375px;
+    }
+
+    .menu-content {
+        width: 417px;
+    }
+
+    .ramen-menu-img {
+        width: 400px;
+
+    }
+}
+
+@media(max-width: 450px) {
+    .menu-content {
+        width: 367px;
+    }
+
+    .ramen-menu-img {
+        width: 350px;
+    }
+}
+
+@media(max-width: 400px) {
+    .menu-content {
+        width: 317px;
+    }
+    
+    .ramen-menu-img {
+        width: 300px;
+        max-height: 115px;
+        min-height: 115px;
     }
 }
 
@@ -332,4 +364,18 @@
     .underline {
         font-size: 17px;
     } 
+}
+
+@media(max-width: 350px) {
+    .menu-content {
+        width: 267px;
+    }
+
+    .ramen-menu-img {
+        width: 250px;
+    }
+
+    .ingredients-txt {
+        height: 33px;
+    }
 }
