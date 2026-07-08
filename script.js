@@ -44,9 +44,6 @@ const sushiAlt = [
 
 let basket = [];
 
-let basketOrdered = false;
-
-
 function init() {
     renderRamenMenu();
     rendernoodleMenu();
@@ -106,18 +103,14 @@ function renderBasket() {
     emptyBasketRef.innerHTML = "";
 
     if (basket.length === 0){
-
-        if (basketOrdered) {
-            basketContentRef.style.display = "none";
-        } else {
-            renderEmptyBasket();
-        }
-
+        basketContentRef.style.display = "";
+        renderEmptyBasket();
+            
         document.getElementById("total_basket").innerHTML ="";
         return;
     }
 
-    basketContentRef.style.display = "";
+    //basketContentRef.style.display = "";
 
     for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
         basketRef.innerHTML += renderBasketTemplate(basketIndex);
@@ -182,11 +175,6 @@ function addToBasket (item) {
         );
     }
 
-    if (basketOrdered) {
-        basketOrdered = false;
-        document.getElementById("whole_basket").style.display = "";
-    }
-
     renderBasket()
 
     renderRamenMenu();
@@ -240,14 +228,12 @@ function orderFood() {
     orderFoodRef.showModal();
 
     basket = [];
-    basketOrdered = true;
 
-        closeRespBAsket();
-
-        renderBasket();
-        renderRamenMenu();
-        rendernoodleMenu();
-        renderSushiMenu();
+    closeRespBAsket();
+    renderBasket();
+    renderRamenMenu();
+    rendernoodleMenu();
+    renderSushiMenu();
 
     setTimeout(() => {
         orderFoodRef.close()
