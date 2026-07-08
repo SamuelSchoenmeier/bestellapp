@@ -242,6 +242,8 @@ function orderFood() {
     basket = [];
     basketOrdered = true;
 
+        closeRespBAsket();
+
         renderBasket();
         renderRamenMenu();
         rendernoodleMenu();
