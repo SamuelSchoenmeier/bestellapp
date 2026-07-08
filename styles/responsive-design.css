@@ -363,7 +363,14 @@
 
     .underline {
         font-size: 17px;
-    } 
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        height: 120px;
+    }
 }
 
 @media(max-width: 350px) {
