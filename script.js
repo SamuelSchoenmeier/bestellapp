@@ -1,30 +1,30 @@
 const ramenImg = [
-    "Tonkotsu ramen image.jpg",
-    "spicy miso ramen.jpg",
-    "shoyu ramen.jpg",
-    "shio ramen.jpg"
+    "Tonkotsu-ramen-image.jpg",
+    "spicy-miso-ramen.jpg",
+    "shoyu-ramen.jpg",
+    "shio-ramen.jpg"
 ];
 
 const ramenAlt = [
-    "Tonkotsu Ramen",
-    "Spicy Miso Ramen",
-    "Shoyu Ramen",
-    "Shio Ramen"
+    "Tonkotsu-Ramen",
+    "Spicy-Miso-Ramen",
+    "Shoyu-Ramen",
+    "Shio-Ramen"
 ];
 
 
 const noodleImg = [
-    "Yaki Udon-img.jpg",
+    "Yaki-Udon-img.jpg",
     "Yakisoba-img.jpg",
-    "Savory Zaru Soba-img.jpg",
-    "Tempura Udon-img.jpg"
+    "Savory-Zaru-Soba-img.jpg",
+    "Tempura-Udon-img.jpg"
 ];
 
 const noodleAlt = [
-    "Yaki Udon",
+    "Yaki-Udon",
     "Yakisoba",
-    "Savory Zaru Soba",
-    "Tempura Udon"
+    "Savory-Zaru-Soba",
+    "Tempura-Udon"
 ];
 
 
