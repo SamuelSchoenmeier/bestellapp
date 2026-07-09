@@ -132,6 +132,7 @@
         background-color: transparent;
         color: var(--secondary-color);
         font-size: 30px;
+        padding-right: 16px;
     }
 
     .order-in-basket {
@@ -141,7 +142,7 @@
     }
 
     .total-basket-styling {
-        padding-top: 170px;
+        padding-top: 110px;
         width: 550px;
         justify-self: center;
     }
@@ -234,6 +235,14 @@
     .empty-basket-text {
         width: 475px;
     }
+
+    .order-in-basket {
+        width: 450px;
+    }
+
+    .total-basket-styling {
+        width: 450px;
+    }
 }
 
 @media(max-width: 570px) {
@@ -304,7 +313,7 @@
         padding: 0;
     }
 
-    h4 {
+    .dish-name {
         font-size: 20px;
         margin: 0;
     }
@@ -326,7 +335,14 @@
 
     .ramen-menu-img {
         width: 400px;
+    }
 
+    .order-in-basket {
+        width: 350px;
+    }
+
+    .total-basket-styling {
+        width: 350px;
     }
 }
 
@@ -370,6 +386,14 @@
         gap: 8px;
         align-items: center;
         height: 120px;
+    }
+
+    .order-in-basket {
+        width: 280px;
+    }
+
+    .total-basket-styling {
+        width: 280px;
     }
 }
 

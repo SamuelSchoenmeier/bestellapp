@@ -110,8 +110,6 @@ function renderBasket() {
         return;
     }
 
-    //basketContentRef.style.display = "";
-
     for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
         basketRef.innerHTML += renderBasketTemplate(basketIndex);
     }
