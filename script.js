@@ -149,6 +149,8 @@ function addSushiToBasket(sushiIndex) {
 }
 
 function addToBasket (item) {
+    document.getElementById("whole_basket").classList.remove("basket-hidden");
+
     let existingItem = basket.find(
         basketItem => basketItem.name == item.name
     );
@@ -215,7 +217,13 @@ function orderFood() {
 
     basket = [];
 
-    closeRespBAsket();
+    if (window.innerWidth > 803) {
+        document.getElementById("whole_basket").classList.add("basket-hidden");
+    } else {
+        closeRespBAsket();
+    }
+
+
     renderBasket();
     renderRamenMenu();
     rendernoodleMenu();

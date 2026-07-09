@@ -96,3 +96,7 @@ tr {
     display: flex;
     justify-content: space-between;
 }
+
+.basket-hidden {
+    display: none;
+}
