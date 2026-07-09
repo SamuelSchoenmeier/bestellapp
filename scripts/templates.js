@@ -2,7 +2,7 @@ function renderRamenTemplate(ramenIndex) {
     return `    <div class="content menu-content">
                     <img 
                         class="ramen-menu-img"
-                        src="/img/${ramenImg[ramenIndex]}"
+                        src="./img/${ramenImg[ramenIndex]}"
                         alt="${ramenAlt[ramenIndex]}"/>
                     
                     <div class="menu-txt">
@@ -31,7 +31,7 @@ function renderNoodleTemplate(noodleIndex) {
     return `    <div class="content menu-content">
                     <img 
                         class="ramen-menu-img"
-                        src="/img/${noodleImg[noodleIndex]}"
+                        src="./img/${noodleImg[noodleIndex]}"
                         alt="${noodleAlt[noodleIndex]}"/>
                     
                     <div class="menu-txt">
@@ -61,7 +61,7 @@ function renderSushiTemplate(sushiIndex) {
     return `    <div class="content menu-content">
                     <img 
                         class="ramen-menu-img"
-                        src="/img/${sushiImg[sushiIndex]}"
+                        src="./img/${sushiImg[sushiIndex]}"
                         alt="${sushiAlt[sushiIndex]}"/>
                     
                     <div class="menu-txt">
@@ -102,7 +102,7 @@ function renderBasketTemplate(basketIndex) {
                         <button class="delete-order-btn" onclick="removeDish(${basketIndex})">
                             ${
                                 basket[basketIndex].quantity > 1
-                                    ? `<img class="delete-order-img" src="/icons/deletebasket-devault.png" alt="" alt="delete"/>`
+                                    ? `<img class="delete-order-img" src="./icons/deletebasket-devault.png" alt="delete"/>`
                                     : ``
                             }
                         </button>
@@ -112,14 +112,14 @@ function renderBasketTemplate(basketIndex) {
                             <button class="delete-order-btn" onclick="decreaseQuantity(${basketIndex})">
                                 ${
                                     basket[basketIndex].quantity === 1
-                                        ? `<img class="delete-order-img" src="/icons/deletebasket-devault.png" alt="delete-order">`
+                                        ? `<img class="delete-order-img" src="./icons/deletebasket-devault.png" alt="delete-order">`
                                         :`<span class="minus-sign">-</span>`
                                 }
                             </button>
 
                             <p>${basket[basketIndex].quantity}</p>
 
-                            <button onclick="increaseQuantity(${basketIndex})" class="add-to-order"><img src="/icons/+.png"></button>
+                            <button onclick="increaseQuantity(${basketIndex})" class="add-to-order"><img src="./icons/+.png"></button>
                         </div>
                         <p>${(basket[basketIndex].price * basket[basketIndex].quantity).toFixed(2)} €</p>
                     </div>
@@ -131,7 +131,7 @@ function emptyBasketTemplate() {
                 Nothing here yet.
                 Go ahead and choose something delicious!
             </p>
-            <img class="empty-basket-shoppingcart" src="/icons/shoppingcart.png" alt="shoppingcart because basket is emptyyy">
+            <img class="empty-basket-shoppingcart" src="./icons/shoppingcart.png" alt="shoppingcart because basket is emptyyy">
             `
 }
 
