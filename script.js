@@ -105,7 +105,6 @@ function renderBasket() {
     if (basket.length === 0){
         basketContentRef.style.display = "";
         renderEmptyBasket();
-            
         document.getElementById("total_basket").innerHTML ="";
         return;
     }
@@ -123,18 +122,14 @@ function renderTotalPrice() {
 
     let subTotal = 0;
 
-
     totalRef.innerHTML = "";
-
 
     for (let totalIndex = 0; totalIndex < basket.length; totalIndex++) {
         subTotal += basket[totalIndex].price * basket[totalIndex].quantity
     }
 
     let deliveryCost = subTotal >= 15 ? 0 : 2;
-
     let totalPrice = subTotal + deliveryCost;
-
 
     totalRef.innerHTML += totalBasketTemplate(totalPrice, subTotal, deliveryCost);
 }
@@ -143,17 +138,14 @@ function renderTotalPrice() {
 
 function addRamenToBasket(ramenIndex) {
     addToBasket(ramen[ramenIndex]);
-
 }
 
 function addNoodleToBasket(noodleIndex) {
     addToBasket(noodels[noodleIndex]);
-
 }
 
 function addSushiToBasket(sushiIndex) {
     addToBasket(sushis[sushiIndex]);
-
 }
 
 function addToBasket (item) {
@@ -174,17 +166,15 @@ function addToBasket (item) {
     }
 
     renderBasket()
-
     renderRamenMenu();
     rendernoodleMenu();
     renderSushiMenu();
-
 }
 
 function increaseQuantity(basketIndex) {
     basket[basketIndex].quantity++;
-    renderBasket();
 
+    renderBasket();
     renderRamenMenu();
     rendernoodleMenu();
     renderSushiMenu();
@@ -198,7 +188,6 @@ function decreaseQuantity (basketIndex) {
     }
 
     renderBasket();
-    
     renderRamenMenu();
     rendernoodleMenu();
     renderSushiMenu();
@@ -214,7 +203,6 @@ function removeDish(basketIndex) {
     basket.splice(basketIndex, 1);
 
     renderBasket();
-
     renderRamenMenu();
     rendernoodleMenu();
     renderSushiMenu();
@@ -236,7 +224,6 @@ function orderFood() {
     setTimeout(() => {
         orderFoodRef.close()
     },  2000);
-
 }
 
 function closeOrderedFood() {

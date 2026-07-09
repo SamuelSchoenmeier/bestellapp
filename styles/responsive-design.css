@@ -354,6 +354,10 @@
     .ramen-menu-img {
         width: 350px;
     }
+
+    .sushi-illustration {
+        height: 80px;
+}
 }
 
 @media(max-width: 400px) {
@@ -365,6 +369,10 @@
         width: 300px;
         max-height: 115px;
         min-height: 115px;
+    }
+
+    .order-food-dialog[open] {
+        width: 249px;
     }
 }
 
