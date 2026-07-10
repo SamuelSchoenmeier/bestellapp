@@ -42,45 +42,29 @@ const sushiAlt = [
     "Inside-Out-Rolls"
 ];
 
+const menus = [
+    { id: "ramen_menu", data: ramen, template: renderRamenTemplate },
+    { id: "noodle_menu", data: noodle, template: renderNoodleTemplate },
+    { id: "sushi_menu", data: sushi, template: renderSushiTemplate }
+];
+
 let basket = [];
 
 function init() {
-    renderRamenMenu();
-    rendernoodleMenu();
-    renderSushiMenu();
+    menus.forEach(menu => renderMenu(menu.id, menu.data, menu.template));
 
     renderEmptyBasket();
 }
 
 
-function renderRamenMenu() {
-    let contentRamenRef = document.getElementById("ramen_menu");
-    contentRamenRef.innerHTML = "";
+function renderMenu(containerId, menuData, templateFunction) {
+    let contentRef = document.getElementById(containerId);
+    contentRef.innerHTML = "";
 
-    for (let ramenIndex = 0; ramenIndex < ramenImg.length; ramenIndex++) {
-        contentRamenRef.innerHTML += renderRamenTemplate(ramenIndex);
-    }
+    menuData.forEach((item, index)=> {
+        contentRef.innerHTML += templateFunction(item, index)
+    });
 }
-
-function rendernoodleMenu() {
-    let contentNoodleRef = document.getElementById("noodle_menu");
-    contentNoodleRef.innerHTML = "";
-
-    for (let noodleIndex = 0; noodleIndex < noodleImg.length; noodleIndex++) {
-        contentNoodleRef.innerHTML += renderNoodleTemplate(noodleIndex);
-        
-    }
-}
-
-function renderSushiMenu() {
-    let contentSushiRef = document.getElementById("sushi_menu");
-    contentSushiRef.innerHTML = "";
-
-    for (let sushiIndex = 0; sushiIndex < sushiImg.length; sushiIndex++) {
-        contentSushiRef.innerHTML += renderSushiTemplate(sushiIndex);
-    }
-}
-
 
 //          /\__/\      
 //         =( '.' )=  |

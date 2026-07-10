@@ -36,6 +36,12 @@
     }
 }
 
+@media (max-width: 1030px) {
+    .menu-titles-elements {
+        padding-left: 30px;
+    }
+}
+
 @media(max-width: 997px) {
     .ingredients-txt {
         max-width: 268px;
@@ -119,6 +125,9 @@
         top: 0;
         width: 100%;
         height: 100%;
+        inset: 0;
+        overflow-y: auto;
+        border-radius: 0;
     }
     .section-basket.show {
         display: block;
@@ -416,5 +425,12 @@
 
     .ingredients-txt {
         height: 33px;
+    }
+}
+
+
+@media(max-height:880px) {
+    .total-basket-styling {
+        padding-top: 30px;
     }
 }
