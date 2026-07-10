@@ -164,9 +164,9 @@ ul {
     color: white;
     background-color: var(--primary-color);
 }
-
 .footer-link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 h1 {

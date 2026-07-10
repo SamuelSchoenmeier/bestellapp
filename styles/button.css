@@ -9,6 +9,7 @@
 .menu-btn:hover {
     background-color: lightpink;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .menu-btn:hover {
@@ -20,10 +21,16 @@
     border: 0;
     padding: 0;
 }
+.delete-order-btn:hover {
+    cursor: pointer;
+}
 
 .add-to-order {
     border: 0;
     background-color: var(--secondary-color);
+}
+.add-to-order:hover {
+    cursor: pointer;
 }
 
 .buy-now-btn {
@@ -33,6 +40,9 @@
     border: 0;
     border-radius: 32px;
     font-size: 20px;
+}
+.buy-now-btn:hover {
+    cursor: pointer;
 }
 
 /*          /\__/\               */
@@ -63,6 +73,7 @@
     background-image: url(../icons/home-hover.png);
     background-color: var(--secondary-color);
     border-radius: 8px;
+    cursor: pointer;
 }
 .reponsive-menu-bar-home:active {
     background-color: var(--primary-color);
@@ -85,6 +96,7 @@
     background-image: url(../icons/person-hover.png);
     background-color: var(--secondary-color);
     border-radius: 8px;
+    cursor: pointer;
 }
 .reponsive-menu-bar-profile:active {
     background-color: var(--primary-color);
@@ -106,6 +118,7 @@
     background-image: url(../icons/takeout_dining_hover.png);
     background-color: var(--secondary-color);
     border-radius: 8px;
+    cursor: pointer;
 }
 .reponsive-menu-bar-food:active {
     background-color: var(--primary-color);
@@ -127,6 +140,7 @@
     background-image: url(../icons/shopping_cart-hover.png);
     background-color: var(--secondary-color);
     border-radius: 8px;
+    cursor: pointer;
 }
 .reponsive-menu-bar-basket:active {
     background-color: var(--primary-color);
@@ -134,4 +148,7 @@
 
 .close-responisve-basket {
     display: none;
+}
+.close-responisve-basket:hover {
+    cursor: pointer;
 }
