@@ -1,90 +1,46 @@
-function renderRamenTemplate(ramenIndex) {
-    return `    <div class="content menu-content">
-                    <img 
-                        class="ramen-menu-img"
-                        src="./img/${ramenImg[ramenIndex]}"
-                        alt="${ramenAlt[ramenIndex]}"/>
-                    
-                    <div class="menu-txt">
-                        <div class="dishname-ingredients">
-                            <h4 class="dish-name">${ramenAlt[ramenIndex]}</h4>
-                            <div class="menu-ingredients">
-                                <p class="ingredients-txt">${ramen[ramenIndex].ingredients}</p>
-                            </div>
-                        </div>
-                    
-                        <div class="price-add-btn">
-                            <h4 class="menucart-price">${ramen[ramenIndex].price} €</h4>
-                            <button onclick="addRamenToBasket(${ramenIndex})" class="menu-btn">
-                            ${
-                                getDishQuantity(ramen[ramenIndex].name) > 0
-                                    ? `<p class="added-to-basket">Added ${getDishQuantity(ramen[ramenIndex].name)}</p>`
-                                    : `<p class="add-to-basket">Add to Basket</p>`
-                            }
-                            </button>
-                        </div>
+function renderMenuTemplate(item, index, category) {
+    return `
+        <div class="content menu-content">
+
+            <img
+                class="ramen-menu-img"
+                src="./img/${item.image}"
+                alt="${item.name}">
+
+            <div class="menu-txt">
+
+                <div class="dishname-ingredients">
+
+                    <h4 class="dish-name">${item.name}</h4>
+
+                    <div class="menu-ingredients">
+                        <p class="ingredients-txt">${item.ingredients}</p>
                     </div>
-                </div>`
-}
 
-function renderNoodleTemplate(noodleIndex) {
-    return `    <div class="content menu-content">
-                    <img 
-                        class="ramen-menu-img"
-                        src="./img/${noodleImg[noodleIndex]}"
-                        alt="${noodleAlt[noodleIndex]}"/>
-                    
-                    <div class="menu-txt">
-                        <div class="dishname-ingredients">
-                            <h4 class="dish-name">${noodleAlt[noodleIndex]}</h4>
-                            <div class="menu-ingredients">
-                                <p class="ingredients-txt">${noodels[noodleIndex].ingredients}</p>
-                            </div>
-                        </div>
+                </div>
 
-                        </div>
-                        <div class="price-add-btn">
-                            <h4 class="menucart-price">${noodels[noodleIndex].price} €</h4>
-                            <button class="menu-btn" onclick="addNoodleToBasket(${noodleIndex})">
-                            ${
-                                getDishQuantity(noodels[noodleIndex].name) > 0
-                                    ? `<p class="added-to-basket">Added ${getDishQuantity(noodels[noodleIndex].name)}</p>`
-                                    : `<p class="add-to-basket">Add to Basket</p>`
-                            }
-                            </button>
-                        </div>
-                    </div>
-                </div>`
-}
+                <div class="price-add-btn">
 
-function renderSushiTemplate(sushiIndex) {
-    return `    <div class="content menu-content">
-                    <img 
-                        class="ramen-menu-img"
-                        src="./img/${sushiImg[sushiIndex]}"
-                        alt="${sushiAlt[sushiIndex]}"/>
-                    
-                    <div class="menu-txt">
-                        <div class="dishname-ingredients">
-                            <h4 class="dish-name">${sushiAlt[sushiIndex]}</h4>
-                            <div class="menu-ingredients">
-                                <p class="ingredients-txt">${sushis[sushiIndex].ingredients}</p>
-                            </div>
-                        </div>
+                    <h4 class="menucart-price">${item.price} €</h4>
 
-                        </div>
-                        <div class="price-add-btn">
-                            <h4 class="menucart-price">${sushis[sushiIndex].price} €</h4>
-                            <button class="menu-btn" onclick="addSushiToBasket(${sushiIndex})">
-                            ${
-                                getDishQuantity(sushis[sushiIndex].name) > 0
-                                    ? `<p class="added-to-basket">Added ${getDishQuantity(sushis[sushiIndex].name)}</p>`
-                                    : `<p class="add-to-basket">Add to Basket</p>`
-                            }
-                            </button>
-                        </div>
-                    </div>
-                </div>`
+                    <button
+                        class="menu-btn"
+                        onclick="addToBasket('${category}', ${index})">
+
+                        ${
+                            getDishQuantity(item.name) > 0
+                                ? `<p class="added-to-basket">
+                                        Added ${getDishQuantity(item.name)}
+                                    </p>`
+                                : `<p class="add-to-basket">
+                                        Add to Basket
+                                    </p>`
+                        }
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 

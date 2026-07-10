@@ -1,68 +1,20 @@
-const ramenImg = [
-    "Tonkotsu-ramen-image.jpg",
-    "spicy-miso-ramen.jpg",
-    "shoyu-ramen.jpg",
-    "shio-ramen.jpg"
-];
-
-const ramenAlt = [
-    "Tonkotsu-Ramen",
-    "Spicy-Miso-Ramen",
-    "Shoyu-Ramen",
-    "Shio-Ramen"
-];
-
-
-const noodleImg = [
-    "Yaki-Udon-img.jpg",
-    "Yakisoba-img.jpg",
-    "Savory-Zaru-Soba-img.jpg",
-    "Tempura-Udon-img.jpg"
-];
-
-const noodleAlt = [
-    "Yaki-Udon",
-    "Yakisoba",
-    "Savory-Zaru-Soba",
-    "Tempura-Udon"
-];
-
-
-const sushiImg = [
-    "Temaki.jpg",
-    "Nigiri-img.jpg",
-    "Maki.jpg",
-    "Inside-Out-Rolls-img.jpg"
-];
-
-const sushiAlt = [
-    "Temaki",
-    "Nigiri",
-    "Maki",
-    "Inside-Out-Rolls"
-];
-
-const menus = [
-    { id: "ramen_menu", data: ramen, template: renderRamenTemplate },
-    { id: "noodle_menu", data: noodle, template: renderNoodleTemplate },
-    { id: "sushi_menu", data: sushi, template: renderSushiTemplate }
-];
-
 let basket = [];
 
 function init() {
-    menus.forEach(menu => renderMenu(menu.id, menu.data, menu.template));
+    menus.forEach(menu=>{
+        renderMenu(menu.id,menu.data,menu.category);
+    });
 
     renderEmptyBasket();
 }
 
 
-function renderMenu(containerId, menuData, templateFunction) {
-    let contentRef = document.getElementById(containerId);
-    contentRef.innerHTML = "";
+function renderMenu(containerId, menuData, category) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
 
-    menuData.forEach((item, index)=> {
-        contentRef.innerHTML += templateFunction(item, index)
+    menuData.forEach((item,index)=>{
+        container.innerHTML += renderMenuTemplate(item,index,category);
     });
 }
 
@@ -97,6 +49,10 @@ function renderBasket() {
         basketRef.innerHTML += renderBasketTemplate(basketIndex);
     }
 
+
+        menus.forEach(menu =>
+            renderMenu(menu.id, menu.data, menu.category)
+        );
     renderTotalPrice();
 }
 
@@ -119,20 +75,19 @@ function renderTotalPrice() {
 }
 
 
+function addToBasket (category ,index) {
+    let menu;
 
-function addRamenToBasket(ramenIndex) {
-    addToBasket(ramen[ramenIndex]);
-}
+    if (category == "ramen") {
+        menu = ramen;
+    } else if (category == "noodels") {
+        menu = noodels;
+    } else {
+        menu = sushis;
+    }
 
-function addNoodleToBasket(noodleIndex) {
-    addToBasket(noodels[noodleIndex]);
-}
+    const item = menu[index];
 
-function addSushiToBasket(sushiIndex) {
-    addToBasket(sushis[sushiIndex]);
-}
-
-function addToBasket (item) {
     document.getElementById("whole_basket").classList.remove("basket-hidden");
 
     let existingItem = basket.find(
@@ -151,19 +106,19 @@ function addToBasket (item) {
         );
     }
 
-    renderBasket()
-    renderRamenMenu();
-    rendernoodleMenu();
-    renderSushiMenu();
+    menus.forEach(menu =>
+        renderMenu(menu.id, menu.data, menu.category)
+    );
+    renderBasket();
 }
 
 function increaseQuantity(basketIndex) {
     basket[basketIndex].quantity++;
 
+    menus.forEach(menu =>
+        renderMenu(menu.id, menu.data, menu.category)
+    );
     renderBasket();
-    renderRamenMenu();
-    rendernoodleMenu();
-    renderSushiMenu();
 }
 
 function decreaseQuantity (basketIndex) {
@@ -173,10 +128,10 @@ function decreaseQuantity (basketIndex) {
         basket.splice(basketIndex, 1);
     }
 
+    menus.forEach(menu =>
+        renderMenu(menu.id, menu.data, menu.category)
+    );
     renderBasket();
-    renderRamenMenu();
-    rendernoodleMenu();
-    renderSushiMenu();
 }
 
 function getDishQuantity(btnName) {
@@ -188,10 +143,10 @@ function getDishQuantity(btnName) {
 function removeDish(basketIndex) {
     basket.splice(basketIndex, 1);
 
+    menus.forEach(menu =>
+        renderMenu(menu.id, menu.data, menu.category)
+    );
     renderBasket();
-    renderRamenMenu();
-    rendernoodleMenu();
-    renderSushiMenu();
 }
 
 function orderFood() {
@@ -207,11 +162,10 @@ function orderFood() {
         closeRespBAsket();
     }
 
-
+    menus.forEach(menu =>
+        renderMenu(menu.id, menu.data, menu.category)
+    );
     renderBasket();
-    renderRamenMenu();
-    rendernoodleMenu();
-    renderSushiMenu();
 
     setTimeout(() => {
         orderFoodRef.close()
