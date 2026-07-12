@@ -434,4 +434,19 @@
     .total-basket-styling {
         padding-top: 30px;
     }
+
+    .h3-basket {
+        margin: 0;
+    }
+}
+
+@media(max-height:750px) {
+    .order-in-basket {
+        height: 350px;
+    }
+
+    .total-basket-styling {
+        margin-bottom: 30px;
+
+    }
 }

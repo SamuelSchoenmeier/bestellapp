@@ -2,6 +2,16 @@
         display: none;
     }
 
+.rasp-basket-counter {
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    width: 18px;
+    margin: 1px 0 19px 15px;
+}
+
 /*          /\__/\               */
 /*        =(  '.' )=   |         */
 /*          |`[]``\   /          */

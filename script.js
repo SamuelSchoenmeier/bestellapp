@@ -6,6 +6,7 @@ function init() {
     });
 
     renderEmptyBasket();
+    renderBasketCount();
 }
 
 
@@ -110,6 +111,7 @@ function addToBasket (category ,index) {
         renderMenu(menu.id, menu.data, menu.category)
     );
     renderBasket();
+    renderBasketCount();
 }
 
 function increaseQuantity(basketIndex) {
@@ -119,6 +121,7 @@ function increaseQuantity(basketIndex) {
         renderMenu(menu.id, menu.data, menu.category)
     );
     renderBasket();
+    renderBasketCount();
 }
 
 function decreaseQuantity (basketIndex) {
@@ -132,6 +135,7 @@ function decreaseQuantity (basketIndex) {
         renderMenu(menu.id, menu.data, menu.category)
     );
     renderBasket();
+    renderBasketCount();
 }
 
 function getDishQuantity(btnName) {
@@ -147,6 +151,7 @@ function removeDish(basketIndex) {
         renderMenu(menu.id, menu.data, menu.category)
     );
     renderBasket();
+    renderBasketCount();
 }
 
 function orderFood() {
@@ -166,6 +171,7 @@ function orderFood() {
         renderMenu(menu.id, menu.data, menu.category)
     );
     renderBasket();
+    renderBasketCount();
 
     setTimeout(() => {
         orderFoodRef.close()
@@ -200,4 +206,17 @@ function closeRespBAsket() {
         .classList.add("responsive-menu-bar");
 
     document.body.classList.remove("no-scroll");
+}
+
+function basketCount() {
+    let amount = 0;
+
+    for (let iAmount = 0; iAmount < basket.length; iAmount++) {
+        amount += basket[iAmount].quantity;
+    }
+    return amount;
+}
+
+function renderBasketCount() {
+    document.getElementById("basket_amount").textContent = basketCount();
 }

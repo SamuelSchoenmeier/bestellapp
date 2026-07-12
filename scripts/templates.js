@@ -1,28 +1,20 @@
 function renderMenuTemplate(item, index, category) {
     return `
         <div class="content menu-content">
-
             <img
                 class="ramen-menu-img"
                 src="./img/${item.image}"
                 alt="${item.name}">
-
             <div class="menu-txt">
-
                 <div class="dishname-ingredients">
-
                     <h4 class="dish-name">${item.name}</h4>
-
                     <div class="menu-ingredients">
                         <p class="ingredients-txt">${item.ingredients}</p>
                     </div>
-
                 </div>
 
                 <div class="price-add-btn">
-
                     <h4 class="menucart-price">${item.price} €</h4>
-
                     <button
                         class="menu-btn"
                         onclick="addToBasket('${category}', ${index})">
