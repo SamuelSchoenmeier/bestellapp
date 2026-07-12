@@ -218,5 +218,13 @@ function basketCount() {
 }
 
 function renderBasketCount() {
-    document.getElementById("basket_amount").textContent = basketCount();
+    let basketCountRef = document.getElementById("basket_amount");
+    let amount = basketCount();
+
+    if (amount === 0) {
+        basketCountRef.style.display = "none";
+    } else {
+        basketCountRef.style.display = "block";
+        basketCountRef.textContent = amount;
+    }
 }
