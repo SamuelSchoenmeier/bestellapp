@@ -28,6 +28,7 @@
 .add-to-order {
     border: 0;
     background-color: var(--secondary-color);
+    font-size: 19px;
 }
 .add-to-order:hover {
     cursor: pointer;

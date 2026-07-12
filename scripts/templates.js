@@ -60,7 +60,7 @@ function renderBasketTemplate(basketIndex) {
                             <button class="delete-order-btn" onclick="decreaseQuantity(${basketIndex})">
                                 ${
                                     basket[basketIndex].quantity === 1
-                                        ? `<img class="delete-order-img" src="./icons/deletebasket-devault.png" alt="delete-order">`
+                                        ? `<img class="delete-order-img" src="./icons/deletebasket-devault.png" alt="delete-order"/>`
                                         :`<span class="minus-sign">-</span>`
                                 }
                             </button>
