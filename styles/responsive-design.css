@@ -442,11 +442,10 @@
 
 @media(max-height:750px) {
     .order-in-basket {
-        height: 350px;
+        height: 300px;
     }
 
     .total-basket-styling {
         margin-bottom: 30px;
-
     }
 }
