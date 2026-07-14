@@ -38,19 +38,15 @@ function renderBasket() {
 
     basketRef.innerHTML = "";
     emptyBasketRef.innerHTML = "";
-
     if (basket.length === 0){
         basketContentRef.style.display = "";
         renderEmptyBasket();
         document.getElementById("total_basket").innerHTML ="";
         return;
     }
-
     for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
         basketRef.innerHTML += renderBasketTemplate(basketIndex);
     }
-
-
         menus.forEach(menu =>
             renderMenu(menu.id, menu.data, menu.category)
         );
@@ -60,37 +56,45 @@ function renderBasket() {
 
 function renderTotalPrice() {
     let totalRef = document.getElementById("total_basket");
-
     let subTotal = 0;
 
     totalRef.innerHTML = "";
-
     for (let totalIndex = 0; totalIndex < basket.length; totalIndex++) {
         subTotal += basket[totalIndex].price * basket[totalIndex].quantity
     }
 
     let deliveryCost = subTotal >= 15 ? 0 : 2;
     let totalPrice = subTotal + deliveryCost;
-
     totalRef.innerHTML += totalBasketTemplate(totalPrice, subTotal, deliveryCost);
 }
 
 
-function addToBasket (category ,index) {
-    let menu;
-
-    if (category == "ramen") {
-        menu = ramen;
-    } else if (category == "noodels") {
-        menu = noodels;
-    } else {
-        menu = sushis;
-    }
-
+function addToBasket(category, index) {
+    const menu = getMenu(category);
     const item = menu[index];
 
-    document.getElementById("whole_basket").classList.remove("basket-hidden");
+    showBasket();
+    addBasketItem(item);
+    updateBasket();
+}
 
+function getMenu(category) {
+    if (category == "ramen") {
+        return ramen;
+    } else if (category == "noodels") {
+        return noodels;
+    } else {
+        return sushis;
+    }
+}
+
+function showBasket() {
+    document
+        .getElementById("whole_basket")
+        .classList.remove("basket-hidden");
+}
+
+function addBasketItem(item) {
     let existingItem = basket.find(
         basketItem => basketItem.name == item.name
     );
@@ -98,18 +102,19 @@ function addToBasket (category ,index) {
     if (existingItem) {
         existingItem.quantity++;
     } else {
-        basket.push(
-            {
-                name: item.name,
-                price:item.price,
-                quantity: 1
-            }
-        );
+        basket.push({
+            name: item.name,
+            price: item.price,
+            quantity: 1
+        });
     }
+}
 
+function updateBasket() {
     menus.forEach(menu =>
         renderMenu(menu.id, menu.data, menu.category)
     );
+
     renderBasket();
     renderBasketCount();
 }
@@ -157,25 +162,45 @@ function removeDish(basketIndex) {
 function orderFood() {
     const orderFoodRef = document.getElementById("ordered_food_dialog");
 
+    showOrderDialog(orderFoodRef);
+    clearBasket();
+    hideBasket();
+    updateBasket();
+
+    setTimeout(() => {
+        closeOrderDialog(orderFoodRef);
+    }, 2000);
+}
+
+function showOrderDialog(orderFoodRef) {
     orderFoodRef.showModal();
+}
 
+function closeOrderDialog(orderFoodRef) {
+    orderFoodRef.close();
+}
+
+function clearBasket() {
     basket = [];
+}
 
+function hideBasket() {
     if (window.innerWidth > 803) {
-        document.getElementById("whole_basket").classList.add("basket-hidden");
+        document
+            .getElementById("whole_basket")
+            .classList.add("basket-hidden");
     } else {
         closeRespBAsket();
     }
+}
 
+function updateBasket() {
     menus.forEach(menu =>
         renderMenu(menu.id, menu.data, menu.category)
     );
+
     renderBasket();
     renderBasketCount();
-
-    setTimeout(() => {
-        orderFoodRef.close()
-    },  2000);
 }
 
 function closeOrderedFood() {
